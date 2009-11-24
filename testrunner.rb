@@ -4,11 +4,11 @@
 # Run automated tests for Jamoma
 ###################################################################
 
-require 'rosc/lib/osc'
-
 # First include the functions in the jamoma lib
-libdir = "../supports"
+libdir = "supports"
 Dir.chdir libdir        # change to libdir so that requires work
+libdir = Dir.pwd
+require 'rosc/lib/osc'
 require "jamomalib"   # C74 build library
 Dir.chdir "#{libdir}/.."
 
@@ -19,14 +19,13 @@ puts "Jamoma Automated Test Runner"
 # argument processing
 ###################################################################
 
-@svnroot = ""
+@gitroot = ""
 if (ARGV.length < 1)
-  Dir.chdir ".."
-  @svnroot = Dir.pwd
+  @gitroot = Dir.pwd
 else
-  @svnroot = ARGV[0]
+  @gitroot = ARGV[0]
 end
-puts "  svn root: " + @svnroot
+puts "  git root: " + @gitroot
 
 
 @maxfolder = ""
@@ -45,8 +44,8 @@ puts "  max folder: " + @maxfolder
 @testroots = ARGV.slice(2, ARGV.length - 2)
 @testroots = [] if(@testroots == nil)
 if (@testroots.length == 0)
-  @testroots << @svnroot
-  puts "  No testroot args, so the default testing root will be: " + @svnroot
+  @testroots << @gitroot
+  puts "  No testroot args, so the default testing root will be: " + @gitroot
 end
   
 
@@ -202,7 +201,7 @@ def establishCommunication
   sleep 5
 
   ping = OSC::Message.new('/ping');
-  pathset = OSC::Message.new("/test/path #{@svnroot}/Tools/testlib")
+  pathset = OSC::Message.new("/test/path #{@gitroot}/Tools/testlib")
   while @pingReturned == 0
     puts "    Sending ping to Max."
     @oscSender.send(ping, 0, @host, @sendPort)
@@ -230,7 +229,7 @@ end
 ###################################################################
 
 puts "  Copying test.manager.maxpat to the Max Startup folder"
-`cp "#{@svnroot}/Tools/testlib/test.manager.maxpat" "#{@maxfolder}/Cycling '74/max-startup"`
+`cp "#{@gitroot}/test.manager.maxpat" "#{@maxfolder}/Cycling '74/max-startup"`
 
 
 puts "  Launching Max..."
