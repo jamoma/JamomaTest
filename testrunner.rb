@@ -24,6 +24,8 @@ if (ARGV.length < 1)
   @gitroot = Dir.pwd
 else
   @gitroot = ARGV[0]
+  Dir.chdir @gitroot
+  @gitroot = Dir.pwd
 end
 puts "  git root: " + @gitroot
 
@@ -145,6 +147,11 @@ def processAllTestFiles(directory, suffix)
   
   # Now we actually go through the directories and open the test
   Dir.foreach(directory) do |x| 
+    olddir = Dir.pwd
+    Dir.chdir directory
+    directory = Dir.pwd
+    Dir.chdir olddir
+
     filepath = directory + path_separator + x
     if File.directory?(filepath) && iteratable_directory_name?(x)
       count = count + processAllTestFiles(filepath, suffix)
@@ -201,7 +208,7 @@ def establishCommunication
   sleep 5
 
   ping = OSC::Message.new('/ping');
-  pathset = OSC::Message.new("/test/path #{@gitroot}/Tools/testlib")
+  pathset = OSC::Message.new("/test/path #{@gitroot}")
   while @pingReturned == 0
     puts "    Sending ping to Max."
     @oscSender.send(ping, 0, @host, @sendPort)
