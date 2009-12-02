@@ -4,13 +4,16 @@
 # Run automated tests for Jamoma
 ###################################################################
 
+# assumes we are being run from this dir!
+@testlib = Dir.pwd
+
 # First include the functions in the jamoma lib
-libdir = "supports"
-Dir.chdir libdir        # change to libdir so that requires work
-libdir = Dir.pwd
-require 'rosc/lib/osc'
+@libdir = "supports"
+Dir.chdir @libdir        # change to libdir so that requires work
+@libdir = Dir.pwd
 require "jamomalib"   # C74 build library
-Dir.chdir "#{libdir}/.."
+require 'rosc/lib/osc'
+Dir.chdir "#{@libdir}/.."
 
 puts "Jamoma Automated Test Runner"
 
@@ -23,8 +26,7 @@ puts "Jamoma Automated Test Runner"
 if (ARGV.length < 1)
   @gitroot = Dir.pwd
 else
-  @gitroot = ARGV[0]
-  Dir.chdir @gitroot
+  Dir.chdir ARGV[0]
   @gitroot = Dir.pwd
 end
 puts "  git root: " + @gitroot
@@ -50,6 +52,15 @@ if (@testroots.length == 0)
   puts "  No testroot args, so the default testing root will be: " + @gitroot
 end
   
+
+Dir.chdir @testlib
+@testroots.each_index do |i|
+  Dir.chdir @testroots[i]
+  @testroots[i] = Dir.pwd
+end
+Dir.chdir @testlib
+puts "  test roots: #{@testroots}"
+
 
 ###################################################################
 # initialization
@@ -83,7 +94,7 @@ end
 
 
 def iteratable_directory_name?(name)
-  name != "." && name != ".." && name != ".svn"
+  name != "." && name != ".." && name != ".svn" && name != ".git"
 end
 
 
@@ -147,11 +158,6 @@ def processAllTestFiles(directory, suffix)
   
   # Now we actually go through the directories and open the test
   Dir.foreach(directory) do |x| 
-    olddir = Dir.pwd
-    Dir.chdir directory
-    directory = Dir.pwd
-    Dir.chdir olddir
-
     filepath = directory + path_separator + x
     if File.directory?(filepath) && iteratable_directory_name?(x)
       count = count + processAllTestFiles(filepath, suffix)
@@ -161,16 +167,15 @@ def processAllTestFiles(directory, suffix)
       count = count + 1
 
       # The path we get back on Windows will need to be massaged so that Max can use it...
-
-	if win32?
-		# This is works but i suppose there are other ways to do that ...
-		formatted_filepath = "#{@maxfolder}/../jamoma/Tools/#{filepath}"
-	else
+    	if win32?
+    		# This is works but i suppose there are other ways to do that ...
+    		formatted_filepath = "#{@maxfolder}/../jamoma/Tools/#{filepath}"
+    	else
      		if formatted_filepath =~ /\/cygdrive\/(.)\/(.*)/
       			formatted_filepath.sub!(/\/cygdrive\/(.)\/(.*)/, '\1:\/\2')
      			formatted_filepath.gsub!(/\\/, '')
      		end
-	end
+    	end
       puts "  #{formatted_filepath}:" 
 
       @testDone = 0
@@ -208,7 +213,7 @@ def establishCommunication
   sleep 5
 
   ping = OSC::Message.new('/ping');
-  pathset = OSC::Message.new("/test/path #{@gitroot}")
+  pathset = OSC::Message.new("/test/path #{@testlib}")
   while @pingReturned == 0
     puts "    Sending ping to Max."
     @oscSender.send(ping, 0, @host, @sendPort)
@@ -236,7 +241,7 @@ end
 ###################################################################
 
 puts "  Copying test.manager.maxpat to the Max Startup folder"
-`cp "#{@gitroot}/test.manager.maxpat" "#{@maxfolder}/Cycling '74/max-startup"`
+`cp "#{@testlib }/test.manager.maxpat" "#{@maxfolder}/Cycling '74/max-startup"`
 
 
 puts "  Launching Max..."
@@ -246,7 +251,6 @@ launchMax()
 puts "  Establishing Communication with Max..."
 establishCommunication()
 setupOscCallbacks()
-
 
 @totaltests = 0
 @testroots.each do |testroot|
