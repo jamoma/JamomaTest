@@ -33,7 +33,7 @@ puts "  git root: " + @gitroot
 
 
 @maxfolder = ""
-if (ARGV.length < 2)
+if (ARGV.length < 2 || ARGV[1] == "default")
   if win32?
     @maxfolder = "C:\\Program Files\\Cycling '74\\Max 5.0"
   else
