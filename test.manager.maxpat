@@ -1,9 +1,9 @@
 {
 	"patcher" : 	{
 		"fileversion" : 1,
-		"rect" : [ 58.0, 44.0, 598.0, 611.0 ],
+		"rect" : [ 58.0, 44.0, 603.0, 683.0 ],
 		"bglocked" : 0,
-		"defrect" : [ 58.0, 44.0, 598.0, 611.0 ],
+		"defrect" : [ 58.0, 44.0, 603.0, 683.0 ],
 		"openrect" : [ 0.0, 0.0, 0.0, 0.0 ],
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -19,6 +19,23 @@
 		"enablevscroll" : 1,
 		"devicewidth" : 0.0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Verdana Bold",
+					"fontsize" : 10.0,
+					"frgb" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"id" : "obj-31",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 90.0, 490.0, 336.0, 31.0 ],
+					"presentation_rect" : [ 218.0, 512.0, 0.0, 0.0 ],
+					"text" : "Flip this toggle if you want to run tests manually and have the output printed to the Max window.",
+					"textcolor" : [ 1.0, 0.0, 0.0, 1.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-33",
 					"maxclass" : "button",
@@ -398,12 +415,12 @@
 					"patching_rect" : [ 220.0, 310.0, 68.0, 19.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontname" : "Arial",
+						"fontname" : "Arial",
+						"default_fontsize" : 12.0,
 						"globalpatchername" : "",
 						"fontface" : 0,
-						"default_fontsize" : 12.0,
 						"fontsize" : 12.0,
-						"default_fontface" : 0,
-						"fontname" : "Arial"
+						"default_fontface" : 0
 					}
 ,
 					"text" : "p open-test"
@@ -658,12 +675,12 @@
 					"patching_rect" : [ 320.0, 310.0, 164.0, 19.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontname" : "Verdana",
+						"fontname" : "Verdana",
+						"default_fontsize" : 10.0,
 						"globalpatchername" : "",
 						"fontface" : 0,
-						"default_fontsize" : 10.0,
 						"fontsize" : 10.0,
-						"default_fontface" : 0,
-						"fontname" : "Verdana"
+						"default_fontface" : 0
 					}
 ,
 					"text" : "p add-components-searchpath"
@@ -672,16 +689,16 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Verdana",
+					"fontname" : "Verdana Bold",
 					"fontsize" : 10.0,
-					"frgb" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"frgb" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"id" : "obj-12",
-					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 75.0, 490.0, 280.0, 31.0 ],
-					"text" : "<-- Flip this toggle if you want to run tests manually and have the output printed to the Max window."
+					"patching_rect" : [ 65.0, 490.0, 29.0, 19.0 ],
+					"text" : "<--",
+					"textcolor" : [ 1.0, 0.0, 0.0, 1.0 ]
 				}
 
 			}
@@ -694,19 +711,20 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 40.0, 510.0, 32.5, 19.0 ],
+					"patching_rect" : [ 40.0, 520.0, 32.5, 19.0 ],
 					"text" : "+ 1"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bordercolor" : [ 0.976471, 0.019608, 0.019608, 1.0 ],
 					"id" : "obj-41",
 					"maxclass" : "toggle",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 40.0, 490.0, 15.0, 15.0 ]
+					"patching_rect" : [ 40.0, 490.0, 25.0, 25.0 ]
 				}
 
 			}
@@ -718,7 +736,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 165.0, 565.0, 34.0, 19.0 ],
+					"patching_rect" : [ 165.0, 575.0, 34.0, 19.0 ],
 					"text" : "print"
 				}
 
@@ -731,7 +749,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 20.0, 565.0, 135.0, 19.0 ],
+					"patching_rect" : [ 20.0, 575.0, 135.0, 19.0 ],
 					"text" : "udpsend 127.0.0.1 7474"
 				}
 
@@ -895,12 +913,12 @@
 					"patching_rect" : [ 200.0, 370.0, 66.0, 19.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontname" : "Verdana",
+						"fontname" : "Verdana",
+						"default_fontsize" : 10.0,
 						"globalpatchername" : "",
 						"fontface" : 0,
-						"default_fontsize" : 10.0,
 						"fontsize" : 10.0,
-						"default_fontface" : 0,
-						"fontname" : "Verdana"
+						"default_fontface" : 0
 					}
 ,
 					"text" : "p deferring"
@@ -916,7 +934,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 20.0, 540.0, 164.0, 19.0 ],
+					"patching_rect" : [ 20.0, 550.0, 164.0, 19.0 ],
 					"text" : "gate 2 1"
 				}
 
@@ -1201,12 +1219,12 @@
 					"patching_rect" : [ 20.0, 465.0, 41.0, 19.0 ],
 					"saved_object_attributes" : 					{
 						"default_fontname" : "Verdana",
+						"fontname" : "Verdana",
+						"default_fontsize" : 10.0,
 						"globalpatchername" : "",
 						"fontface" : 0,
-						"default_fontsize" : 10.0,
 						"fontsize" : 10.0,
-						"default_fontface" : 0,
-						"fontname" : "Verdana"
+						"default_fontface" : 0
 					}
 ,
 					"text" : "p thru"
@@ -1540,7 +1558,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-32", 1 ],
 					"hidden" : 0,
-					"midpoints" : [ 29.5, 533.0, 174.5, 533.0 ],
+					"midpoints" : [ 29.5, 545.0, 174.5, 545.0 ],
 					"source" : [ "obj-6", 0 ]
 				}
 
