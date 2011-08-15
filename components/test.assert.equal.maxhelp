@@ -7,9 +7,9 @@
 			"revision" : 9
 		}
 ,
-		"rect" : [ 289.0, 73.0, 730.0, 645.0 ],
+		"rect" : [ 265.0, 44.0, 737.0, 731.0 ],
 		"bglocked" : 0,
-		"defrect" : [ 289.0, 73.0, 730.0, 645.0 ],
+		"defrect" : [ 265.0, 44.0, 737.0, 731.0 ],
 		"openrect" : [ 0.0, 0.0, 0.0, 0.0 ],
 		"openinpresentation" : 0,
 		"default_fontsize" : 10.0,
@@ -25,6 +25,79 @@
 		"enablevscroll" : 1,
 		"devicewidth" : 0.0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Verdana",
+					"fontsize" : 10.0,
+					"frgb" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"id" : "obj-13",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 55.0, 540.0, 384.0, 19.0 ],
+					"presentation_rect" : [ 56.0, 541.0, 0.0, 0.0 ],
+					"text" : "A simpler way of linking to one or more Redmine issues, using the @issue"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Verdana",
+					"fontsize" : 10.0,
+					"id" : "obj-11",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 65.0, 565.0, 33.0, 17.0 ],
+					"presentation_rect" : [ 63.0, 530.0, 0.0, 0.0 ],
+					"text" : "3.14"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Verdana",
+					"fontsize" : 10.0,
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 65.0, 585.0, 249.0, 19.0 ],
+					"text" : "test.assert.equal ThisTestFails 3.15 @issue 922"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Verdana",
+					"fontsize" : 10.0,
+					"frgb" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"id" : "obj-2",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 135.0, 195.0, 286.0, 19.0 ],
+					"presentation_rect" : [ 136.0, 194.0, 0.0, 0.0 ],
+					"text" : "One or more Redmine issues relating to this test"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Verdana",
+					"fontsize" : 10.0,
+					"frgb" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"id" : "obj-4",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 70.0, 195.0, 59.0, 19.0 ],
+					"presentation_rect" : [ 71.0, 194.0, 0.0, 0.0 ],
+					"text" : "@issue"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
@@ -48,7 +121,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 55.0, 550.0, 283.0, 19.0 ],
+					"patching_rect" : [ 55.0, 630.0, 283.0, 19.0 ],
 					"text" : "The @reverse attribute cause this test to pass"
 				}
 
@@ -105,7 +178,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 135.0, 230.0, 305.0, 43.0 ],
+					"patching_rect" : [ 135.0, 240.0, 305.0, 43.0 ],
 					"text" : "If the test fails, this is added to the log as an annotation. Recommended used to provide the link to the issue as tracked in Redmine."
 				}
 
@@ -119,7 +192,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 70.0, 230.0, 59.0, 19.0 ],
+					"patching_rect" : [ 70.0, 240.0, 59.0, 19.0 ],
 					"text" : "anything"
 				}
 
@@ -133,7 +206,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 55.0, 210.0, 150.0, 19.0 ],
+					"patching_rect" : [ 55.0, 220.0, 150.0, 19.0 ],
 					"text" : "Right inlet:"
 				}
 
@@ -259,7 +332,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 70.0, 575.0, 33.0, 17.0 ],
+					"patching_rect" : [ 70.0, 655.0, 33.0, 17.0 ],
 					"text" : "3.14"
 				}
 
@@ -272,7 +345,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 70.0, 600.0, 292.0, 19.0 ],
+					"patching_rect" : [ 70.0, 680.0, 292.0, 19.0 ],
 					"text" : "test.assert.equal ThisTestPassesAsWell 3.15 @reverse 1"
 				}
 
@@ -301,8 +374,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 520.0, 415.0, 145.0, 41.0 ],
-					"text" : "PASS ThisTestPassesAsWell -- Annotation is ignored if the test passes"
+					"patching_rect" : [ 520.0, 415.0, 149.0, 41.0 ],
+					"text" : "FAIL ThisTestFails http://redmine.jamoma.org/issues/922"
 				}
 
 			}
@@ -383,7 +456,7 @@
 					"name" : "jcom.maxhelpui.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 0.0, 0.0, 726.0, 70.0 ],
+					"patching_rect" : [ 0.0, 0.0, 730.0, 70.0 ],
 					"varname" : "maxhelpui"
 				}
 
@@ -403,6 +476,15 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"hidden" : 0,
+					"midpoints" : [  ],
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 1 ],
 					"hidden" : 0,
@@ -478,7 +560,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-12", 1 ],
 					"hidden" : 0,
-					"midpoints" : [ 529.5, 378.0, 655.5, 378.0 ],
+					"midpoints" : [ 529.5, 378.0, 659.5, 378.0 ],
 					"source" : [ "obj-9", 0 ]
 				}
 
