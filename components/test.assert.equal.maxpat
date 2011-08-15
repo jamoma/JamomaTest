@@ -903,13 +903,11 @@
 									"fontname" : "Verdana",
 									"fontsize" : 10.0,
 									"id" : "obj-32",
-									"linecount" : 4,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 100.0, 170.0, 53.0 ],
-									"text" : "http://redmine.jamoma.org/issues/213 http://redmine.jamoma.org/issues/912"
+									"patching_rect" : [ 50.0, 100.0, 170.0, 17.0 ]
 								}
 
 							}
