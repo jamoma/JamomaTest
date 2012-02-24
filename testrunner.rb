@@ -34,11 +34,19 @@ puts "  git root: " + @gitroot
 
 @maxfolder = ""
 if (ARGV.length < 2 || ARGV[1] == "default")
+  @maxversion = 5
   if win32?
     @maxfolder = "C:\\Program Files\\Cycling '74\\Max 5.0"
   else
     @maxfolder = "/Applications/Max5"
   end
+elsif (ARGV.length < 2 || ARGV[1] == "Max6")
+  @maxversion = 6
+  if win32?
+    @maxfolder = "C:\\Program Files\\Cycling '74\\Max 6.0"
+  else
+    @maxfolder = "/Applications/Max6"
+  end  
 else
   @maxfolder = ARGV[1]
 end
@@ -231,7 +239,11 @@ def launchMax
    cygwinPathForMaxFolder.sub!(/(.):\//, '/cygdrive/\1/')
     `cygstart "#{@maxfolder}/Max.exe"`
   else
-    `open "#{@maxfolder}/MaxMSP.app/Contents/MacOS/MaxMSP"`
+    if (@maxversion == 6)
+      `open "#{@maxfolder}/Max.app/Contents/MacOS/Max"`
+    else
+      `open "#{@maxfolder}/MaxMSP.app/Contents/MacOS/MaxMSP"`
+    end
   end
 end
 
