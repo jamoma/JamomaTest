@@ -8,12 +8,12 @@
 @testlib = Dir.pwd
 
 # First include the functions in the jamoma lib
-@libdir = "supports"
+@libdir = "../Support"
 Dir.chdir @libdir        # change to libdir so that requires work
 @libdir = Dir.pwd
 require "jamomalib"   # C74 build library
 require 'rosc/lib/osc'
-Dir.chdir "#{@libdir}/.."
+Dir.chdir "#{@libdir}/../Test"
 
 puts "Jamoma Automated Test Runner"
 
