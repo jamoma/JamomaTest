@@ -83,6 +83,7 @@ puts "  test roots: #{@testroots}"
 @startTime = Time.now
 
 @testDone = 0
+@failsWithRedmineIssue = 0
 
 puts "  Starting the OSC Server..."
 @oscReceiver = OSC::UDPServer.new
@@ -159,6 +160,9 @@ def setupOscCallbacks
         puts "    FAILED: #{msg.args[1]} #{msg.args[2]}  #{msg.args[3]} #{msg.args[4]} #{msg.args[6]} (#{msg.args[7]})     ********************"
       end
       @failures = @failures + 1
+      if  msg.args[msg.args.size-1].start_with?('http://redmine.jamoma.org/issues/')
+        @failsWithRedmineIssue = @failsWithRedmineIssue + 1
+      end
     end
   end
   
@@ -287,13 +291,17 @@ sleep 5
 puts "  Clean up: removing test.manager.maxpat from the Max Startup folder"
 `rm "#{@maxfolder}/Cycling '74/max-startup/test.manager.maxpat"`
 
+@sumAssertions = @failures+@passes
+
 puts ""
 puts "  RESULTS:"
-puts "    assertions failed:    #{@failures}"
+puts "    number of assertions:    #{@sumAssertions}"
+puts "    assertions failed:       #{@failures} (#{@failures*100.0/@sumAssertions} %)"
+puts "                             #{@failures-@failsWithRedmineIssue} out of these #{@failures} are unreported (means there is no associated redmine issue)"
 #puts "    unusual terminations: #{@potential_crashes}"
-puts "    assertions passed:    #{@passes}"
-puts "    number of files:      #{@totaltests}"
-puts "    total test time:      #{Time.now - @startTime} seconds"
+puts "    assertions passed:       #{@passes} (#{@passes*100.0/@sumAssertions} %)"
+puts "    number of files:         #{@totaltests}"
+puts "    total test time:         #{Time.now - @startTime} seconds"
 
 
 puts ""
