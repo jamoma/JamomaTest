@@ -138,8 +138,10 @@ def setupOscCallbacks
         puts "    PASSED: #{msg.args[1]}"
       elsif msg.args.size == 3
         puts "    PASSED: #{msg.args[1]} #{msg.args[2]}"
-      else
+      elsif msg.args.size == 4
         puts "    PASSED: #{msg.args[1]} #{msg.args[2]} (#{msg.args[3]})"
+      else #if msg.args.size == 5  
+        puts "    PASSED: #{msg.args[1]} #{msg.args[2]} #{msg.args[3]} (#{msg.args[4]})"
       end
       @passes = @passes + 1
     else
@@ -147,8 +149,10 @@ def setupOscCallbacks
         puts "    FAILED: #{msg.args[1]}     ********************"
       elsif msg.args.size == 3
         puts "    FAILED: #{msg.args[1]} #{msg.args[2]}     ********************"
-      else
+      elsif msg.args.size == 4
         puts "    FAILED: #{msg.args[1]} #{msg.args[2]} (#{msg.args[3]})    ********************"
+      else   
+        puts "    FAILED: #{msg.args[1]} #{msg.args[2]}  #{msg.args[3]} (#{msg.args[4]})     ********************"
       end
       @failures = @failures + 1
     end
