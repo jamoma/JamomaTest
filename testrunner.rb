@@ -84,11 +84,15 @@ puts "  test roots: #{@testroots}"
 
 @testDone = 0
 @failsWithRedmineIssue = 0
+@log_root = "./logs-Testrunner"
+puts"  Creating Test Log at #{@testlib}"
+create_test_logs
 
 puts "  Starting the OSC Server..."
 @oscReceiver = OSC::UDPServer.new
 @oscReceiver.bind @host, @receivePort
 @oscSender = OSC::UDPSocket.new
+
 
 
 ###################################################################
@@ -145,6 +149,7 @@ def setupOscCallbacks
         #puts "    PASSED: #{msg.args[1]} #{msg.args[2]} #{msg.args[3]} (#{msg.args[4]})"
       end
       @passes = @passes + 1
+      log_test_pass('  ' + msg.args.to_s[4..-1])
     else
       if msg.args.size == 2
         puts "    FAILED: #{msg.args[1]}     ********************"
@@ -157,9 +162,15 @@ def setupOscCallbacks
       elsif msg.args.size == 6   
         puts "    FAILED: #{msg.args[1]} #{msg.args[2]}  #{msg.args[3]} #{msg.args[4]} (#{msg.args[5]})     ********************"
      else #if msg.args.size == 7   
-        puts "    FAILED: #{msg.args[1]} #{msg.args[2]}  #{msg.args[3]} #{msg.args[4]} #{msg.args[6]} (#{msg.args[7]})     ********************"
+        puts "    FAILED: #{msg.args[1]} #{msg.args[2]}  #{msg.args[3]} #{msg.args[4]} #{msg.args[5]} (#{msg.args[6]})     ********************"
       end
       @failures = @failures + 1
+      if @fileIsWrittenToFailLog == false
+         log_test_fail('') 
+         log_test_fail(@formatted_filepath)
+         @fileIsWrittenToFailLog = true
+       end        
+       log_test_fail('  ' + msg.args.to_s[4..-1])
       if  msg.args[msg.args.size-1].start_with?('http://redmine.jamoma.org/issues/')
         @failsWithRedmineIssue = @failsWithRedmineIssue + 1
       end
@@ -182,25 +193,25 @@ def processAllTestFiles(directory, suffix)
     if File.directory?(filepath) && iteratable_directory_name?(x)
       count = count + processAllTestFiles(filepath, suffix)
     elsif valid_test_file_name?(x, suffix)
-      formatted_filepath = filepath
+      @formatted_filepath = filepath
       start_test_time = Time.now
       count = count + 1
 
       # The path we get back on Windows will need to be massaged so that Max can use it...
     	if win32?
     		# This is works but i suppose there are other ways to do that ...
-    		formatted_filepath = "#{@maxfolder}/../jamoma/Tools/#{filepath}"
+    		@formatted_filepath = "#{@maxfolder}/../jamoma/Tools/#{filepath}"
     	else
-     		if formatted_filepath =~ /\/cygdrive\/(.)\/(.*)/
-      			formatted_filepath.sub!(/\/cygdrive\/(.)\/(.*)/, '\1:\/\2')
-     			formatted_filepath.gsub!(/\\/, '')
+     		if @formatted_filepath =~ /\/cygdrive\/(.)\/(.*)/
+      			@formatted_filepath.sub!(/\/cygdrive\/(.)\/(.*)/, '\1:\/\2')
+     			@formatted_filepath.gsub!(/\\/, '')
      		end
     	end
-      puts "  #{formatted_filepath}:" 
-
+      puts "  #{@formatted_filepath}:" 
+      @fileIsWrittenToFailLog = false
       @testDone = 0
       
-      m = OSC::Message.new("/test/open #{formatted_filepath}");
+      m = OSC::Message.new("/test/open #{@formatted_filepath}");
       @oscSender.send(m, 0, @host, @sendPort)
  
       while @testDone == 0
@@ -303,6 +314,13 @@ puts "    assertions passed:       #{@passes} (#{@passes*100.0/@sumAssertions} %
 puts "    number of files:         #{@totaltests}"
 puts "    total test time:         #{Time.now - @startTime} seconds"
 
+log_test_pass('')
+log_test_pass("#{@passes} of #{@sumAssertions} tests passed")
+log_test_fail('')
+log_test_fail("           #{@failures} of #{@sumAssertions} tests failed")
+log_test_fail("           #{@failures-@failsWithRedmineIssue} of #{@failures} fails are unreported")
+
+close_test_logs # Close log file
 
 puts ""
 exit 0
