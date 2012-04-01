@@ -7,7 +7,7 @@
 			"revision" : 5
 		}
 ,
-		"rect" : [ 184.0, 132.0, 998.0, 270.0 ],
+		"rect" : [ 144.0, 395.0, 998.0, 270.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -35,7 +35,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 31.0, 227.0, 68.0, 18.0 ]
+					"patching_rect" : [ 31.0, 227.0, 68.0, 18.0 ],
+					"text" : "wclose"
 				}
 
 			}
@@ -108,7 +109,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 437.0, 134.0, 447.0, 20.0 ],
-					"text" : "test.assert.equal2 addition @input [1. 2] [10 -5.] @expected [3.] [4.9] @issue 9999"
+					"text" : "test.assert.equal2 addition @input [1. 2] [10 -5.] @expected [3.] [5.1] @issue 9999"
 				}
 
 			}
