@@ -7,7 +7,7 @@
 			"revision" : 5
 		}
 ,
-		"rect" : [ 144.0, 395.0, 998.0, 270.0 ],
+		"rect" : [ 196.0, 152.0, 995.0, 429.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -27,6 +27,38 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"color" : [ 1.0, 0.501961, 0.0, 1.0 ],
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-20",
+					"linecount" : 4,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 374.0, 271.0, 105.0, 62.0 ],
+					"text" : "jcom.dataspace @dataspace time @input midi @output Hz"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-19",
+					"linecount" : 3,
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 489.0, 278.0, 263.0, 48.0 ],
+					"text" : "test.assert.equal2 datas @input [getinput] [getoutput] [getdataspace] @expected [input midi] [output Hz] [dataspace time]"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -79,8 +111,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 437.0, 200.0, 405.0, 20.0 ],
-					"text" : "test.assert.equal2 multiplication @input [1 2] [0 -5 123] @expected [2.] [0.]"
+					"patching_rect" : [ 473.0, 227.0, 415.0, 20.0 ],
+					"text" : "test.assert.equal2 multiplication @input [1 2] [1 -5 123] @expected [2.] [-5.]"
 				}
 
 			}
@@ -108,8 +140,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 437.0, 134.0, 447.0, 20.0 ],
-					"text" : "test.assert.equal2 addition @input [1. 2] [10 -5.] @expected [3.] [5.1] @issue 9999"
+					"patching_rect" : [ 437.0, 134.0, 441.0, 20.0 ],
+					"text" : "test.assert.equal2 addition @input [1. 2] [10 -5.] @expected [3.] [5.] @issue 9999"
 				}
 
 			}
@@ -203,12 +235,11 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-1",
-					"linecount" : 3,
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 566.0, 52.0, 179.0, 48.0 ],
+					"patching_rect" : [ 566.0, 52.0, 437.0, 20.0 ],
 					"text" : "test.assert.equal2 midi2Hz @input [33.] [69.] [45.] @expected [55.0] [440.] [110.]"
 				}
 
@@ -247,7 +278,6 @@
 					"destination" : [ "obj-18", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 446.5, 256.0, 433.5, 256.0, 433.5, 195.0, 446.5, 195.0 ],
 					"source" : [ "obj-17", 0 ]
 				}
 
@@ -263,10 +293,28 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-20", 1 ]
 				}
 
 			}
@@ -281,7 +329,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-7", 0 ],
+					"destination" : [ "obj-8", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-6", 0 ]
