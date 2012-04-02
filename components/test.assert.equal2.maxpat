@@ -1867,7 +1867,7 @@
 													"numoutlets" : 5,
 													"outlettype" : [ "", "", "", "", "" ],
 													"patching_rect" : [ 80.75, 124.0, 185.0, 20.0 ],
-													"text" : "regexp (\\\\]\\\\s*\\\\[) @substitute \" / \""
+													"text" : "regexp (\\\\]\\\\s*\\\\[) @substitute /"
 												}
 
 											}
@@ -2090,7 +2090,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 95.5, 100.0, 59.0, 20.0 ],
+													"patching_rect" : [ 20.5, 82.0, 59.0, 20.0 ],
 													"text" : "tosymbol"
 												}
 
@@ -2104,7 +2104,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 174.0, 159.0, 70.0, 20.0 ],
+													"patching_rect" : [ 99.0, 141.0, 70.0, 20.0 ],
 													"text" : "sprintf [%s]"
 												}
 
@@ -2146,7 +2146,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 2,
 													"outlettype" : [ "bang", "" ],
-													"patching_rect" : [ 95.5, 127.0, 97.5, 20.0 ],
+													"patching_rect" : [ 20.5, 109.0, 97.5, 20.0 ],
 													"text" : "t b l"
 												}
 
@@ -2173,7 +2173,7 @@
 													"numinlets" : 0,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 95.5, 40.0, 25.0, 25.0 ]
+													"patching_rect" : [ 158.5, 25.0, 25.0, 25.0 ]
 												}
 
 											}
