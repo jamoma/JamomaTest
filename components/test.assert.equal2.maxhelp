@@ -7,7 +7,7 @@
 			"revision" : 5
 		}
 ,
-		"rect" : [ 60.0, 46.0, 1183.0, 636.0 ],
+		"rect" : [ 49.0, 91.0, 1160.0, 496.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,7 +39,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 712.5, 71.0, 201.0, 53.0 ],
+					"patching_rect" : [ 808.0, 71.0, 201.0, 53.0 ],
 					"text" : "@expected defines what should be returned from the system under test"
 				}
 
@@ -56,7 +56,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 582.5, 64.0, 117.0, 67.0 ],
+					"patching_rect" : [ 687.0, 64.0, 121.0, 67.0 ],
 					"text" : "@input defines what is sent to the system under test"
 				}
 
@@ -64,7 +64,7 @@
 , 			{
 				"box" : 				{
 					"bubble" : 1,
-					"bubblepoint" : 0.77,
+					"bubblepoint" : 0.53,
 					"bubbleside" : 2,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -74,7 +74,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 457.0, 71.0, 117.0, 53.0 ],
+					"patching_rect" : [ 570.0, 71.0, 117.0, 53.0 ],
 					"text" : "first arg is the name of the test"
 				}
 
@@ -90,7 +90,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 301.625, 87.0, 129.25, 39.0 ],
+					"patching_rect" : [ 409.625, 87.0, 129.25, 39.0 ],
 					"text" : "the system under test"
 				}
 
@@ -105,7 +105,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 445.0, 438.0, 150.0, 34.0 ],
+					"patching_rect" : [ 445.0, 437.0, 150.0, 34.0 ],
 					"text" : "testing different outputs with two tests"
 				}
 
@@ -119,7 +119,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 962.0, 359.0, 58.0, 18.0 ],
+					"patching_rect" : [ 962.0, 358.0, 58.0, 18.0 ],
 					"text" : "1 2, 1 - 5"
 				}
 
@@ -134,8 +134,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 908.0, 311.0, 218.0, 62.0 ],
-					"text" : "multiple messages can be sent, isolaated by brakets '[ ]'  \nso [1 2] [1 - 5] is similar to the max message "
+					"patching_rect" : [ 908.0, 310.0, 218.0, 62.0 ],
+					"text" : "multiple messages can be sent, isolated by brakets '[ ]'  \nso [1 2] [1 - 5] is similar to the max message "
 				}
 
 			}
@@ -148,7 +148,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 908.0, 281.0, 212.0, 20.0 ],
+					"patching_rect" : [ 908.0, 280.0, 212.0, 20.0 ],
 					"text" : "data can be of different list length"
 				}
 
@@ -162,7 +162,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 908.0, 210.0, 212.0, 20.0 ],
+					"patching_rect" : [ 908.0, 221.0, 212.0, 20.0 ],
 					"text" : "@reverse attribute for testing a NOT "
 				}
 
@@ -176,8 +176,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 908.0, 183.0, 191.0, 20.0 ],
-					"text" : "floats and ints are enot the same "
+					"patching_rect" : [ 908.0, 191.0, 191.0, 20.0 ],
+					"text" : "floats and ints are not the same "
 				}
 
 			}
@@ -190,7 +190,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 908.0, 157.0, 191.0, 20.0 ],
+					"patching_rect" : [ 908.0, 161.0, 191.0, 20.0 ],
 					"text" : "single number input and expected"
 				}
 
@@ -218,7 +218,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 899.0, 387.0, 150.0, 20.0 ],
+					"patching_rect" : [ 899.0, 386.0, 150.0, 20.0 ],
 					"text" : "woks with string data too"
 				}
 
@@ -232,7 +232,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 350.0, 236.0, 32.5, 20.0 ],
+					"patching_rect" : [ 458.0, 250.0, 32.5, 20.0 ],
 					"text" : "+ 1."
 				}
 
@@ -247,8 +247,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 411.0, 236.0, 479.0, 20.0 ],
-					"text" : "test.assert.equal2 REVERSE:one-input+one-output @input 1. @expected 2 @reverse 1"
+					"patching_rect" : [ 519.0, 250.0, 367.0, 20.0 ],
+					"text" : "test.assert.equal2 reversefoo2 @input 1. @expected 2 @reverse 1"
 				}
 
 			}
@@ -261,7 +261,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 350.0, 210.0, 32.5, 20.0 ],
+					"patching_rect" : [ 458.0, 221.0, 32.5, 20.0 ],
 					"text" : "+ 1."
 				}
 
@@ -276,8 +276,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 411.0, 210.0, 489.0, 20.0 ],
-					"text" : "test.assert.equal2 REVERSE:one-input+one-output @input 1. @expected 2.1 @reverse 1"
+					"patching_rect" : [ 519.0, 221.0, 377.0, 20.0 ],
+					"text" : "test.assert.equal2 reversefoo1 @input 1. @expected 2.1 @reverse 1"
 				}
 
 			}
@@ -290,7 +290,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 350.0, 183.0, 32.5, 20.0 ],
+					"patching_rect" : [ 458.0, 191.0, 32.5, 20.0 ],
 					"text" : "+ 1."
 				}
 
@@ -305,8 +305,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 411.0, 183.0, 433.0, 20.0 ],
-					"text" : "test.assert.equal2 MUST_FAIL2:one-input+one-output @input 1. @expected 2"
+					"patching_rect" : [ 519.0, 191.0, 281.0, 20.0 ],
+					"text" : "test.assert.equal2 badfoo2 @input 1. @expected 2"
 				}
 
 			}
@@ -319,7 +319,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 350.0, 157.0, 32.5, 20.0 ],
+					"patching_rect" : [ 458.0, 161.0, 32.5, 20.0 ],
 					"text" : "+ 1."
 				}
 
@@ -334,8 +334,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 411.0, 157.0, 441.0, 20.0 ],
-					"text" : "test.assert.equal2 MUST_FAIL1:one-input+one-output @input 1. @expected 2.1"
+					"patching_rect" : [ 519.0, 161.0, 291.0, 20.0 ],
+					"text" : "test.assert.equal2 badfoo1 @input 1. @expected 2.1"
 				}
 
 			}
@@ -348,7 +348,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 350.0, 281.0, 32.5, 20.0 ],
+					"patching_rect" : [ 458.0, 280.0, 32.5, 20.0 ],
 					"text" : "+ 0."
 				}
 
@@ -362,8 +362,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 411.0, 281.0, 361.0, 20.0 ],
-					"text" : "test.assert.equal2 two-input+one-output @input 1 2 @expected 3."
+					"patching_rect" : [ 519.0, 280.0, 279.0, 20.0 ],
+					"text" : "test.assert.equal2 listfoo @input 1 2 @expected 3."
 				}
 
 			}
@@ -377,7 +377,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 457.0, 366.0, 105.0, 62.0 ],
+					"patching_rect" : [ 457.0, 365.0, 105.0, 62.0 ],
 					"text" : "jcom.dataspace @dataspace time @input midi @output Hz"
 				}
 
@@ -392,7 +392,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 591.5, 373.0, 260.5, 48.0 ],
+					"patching_rect" : [ 591.5, 372.0, 260.5, 48.0 ],
 					"text" : "test.assert.equal2 dumpout @input [getinput] [getoutput] [getdataspace] @expected [input midi] [output Hz] [dataspace time]"
 				}
 
@@ -435,7 +435,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 350.0, 311.0, 32.5, 20.0 ],
+					"patching_rect" : [ 458.0, 310.0, 32.5, 20.0 ],
 					"text" : "+ 0."
 				}
 
@@ -449,8 +449,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 411.0, 311.0, 460.0, 20.0 ],
-					"text" : "test.assert.equal2 list-of-inputs+list-of-outputs @input [1 2] [1 -5] @expected [3.] [-4.]"
+					"patching_rect" : [ 519.0, 310.0, 349.0, 20.0 ],
+					"text" : "test.assert.equal2 foofoo @input [1 2] [1 -5] @expected [3.] [-4.]"
 				}
 
 			}
@@ -463,7 +463,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 350.0, 131.0, 32.5, 20.0 ],
+					"patching_rect" : [ 458.0, 131.0, 32.5, 20.0 ],
 					"text" : "+ 1."
 				}
 
@@ -477,8 +477,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 411.0, 131.0, 356.0, 20.0 ],
-					"text" : "test.assert.equal2 one-input+one-output @input 1. @expected 2."
+					"patching_rect" : [ 519.0, 131.0, 351.0, 20.0 ],
+					"text" : "test.assert.equal2 foooooooooooooooo @input 1. @expected 2."
 				}
 
 			}
@@ -489,7 +489,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 100.5, 87.0, 20.0, 20.0 ]
+					"patching_rect" : [ 51.0, 87.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -559,7 +559,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 257.0, 373.0, 177.0, 48.0 ],
+					"patching_rect" : [ 257.0, 372.0, 177.0, 48.0 ],
 					"text" : "test.assert.equal2 midi2Hz @input [33.] [69.] [45.] @expected [55.0] [440.] [110.]"
 				}
 
