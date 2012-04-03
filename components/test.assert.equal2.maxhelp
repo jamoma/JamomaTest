@@ -7,7 +7,7 @@
 			"revision" : 5
 		}
 ,
-		"rect" : [ 60.0, 46.0, 1183.0, 636.0 ],
+		"rect" : [ 274.0, 78.0, 1183.0, 636.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -56,7 +56,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 582.5, 64.0, 117.0, 67.0 ],
+					"patching_rect" : [ 582.5, 64.0, 121.0, 67.0 ],
 					"text" : "@input defines what is sent to the system under test"
 				}
 
@@ -135,7 +135,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 908.0, 311.0, 218.0, 62.0 ],
-					"text" : "multiple messages can be sent, isolaated by brakets '[ ]'  \nso [1 2] [1 - 5] is similar to the max message "
+					"text" : "multiple messages can be sent, isolated by brakets '[ ]'  \nso [1 2] [1 - 5] is similar to the max message "
 				}
 
 			}
@@ -177,7 +177,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 908.0, 183.0, 191.0, 20.0 ],
-					"text" : "floats and ints are enot the same "
+					"text" : "floats and ints are not the same "
 				}
 
 			}
@@ -406,7 +406,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 31.0, 227.0, 68.0, 18.0 ],
+					"patching_rect" : [ 18.0, 317.0, 68.0, 18.0 ],
 					"text" : "wclose"
 				}
 
@@ -421,7 +421,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 175.0, 146.0, 150.0, 48.0 ],
+					"patching_rect" : [ 162.0, 236.0, 150.0, 48.0 ],
 					"text" : "<- this bang message is reserved by the testing system"
 				}
 
@@ -489,7 +489,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 100.5, 87.0, 20.0, 20.0 ]
+					"patching_rect" : [ 87.5, 177.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -502,7 +502,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 31.0, 27.0, 60.0, 20.0 ],
+					"patching_rect" : [ 18.0, 117.0, 60.0, 20.0 ],
 					"text" : "loadbang"
 				}
 
@@ -516,7 +516,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "bang" ],
-					"patching_rect" : [ 31.0, 115.0, 34.0, 20.0 ],
+					"patching_rect" : [ 18.0, 205.0, 34.0, 20.0 ],
 					"text" : "t b b"
 				}
 
@@ -529,7 +529,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 46.0, 146.0, 129.0, 20.0 ],
+					"patching_rect" : [ 33.0, 236.0, 129.0, 20.0 ],
 					"text" : "s start-jamoma-testing"
 				}
 
@@ -544,7 +544,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 31.0, 172.0, 75.0, 20.0 ],
+					"patching_rect" : [ 18.0, 262.0, 75.0, 20.0 ],
 					"text" : "test.finished"
 				}
 
@@ -777,14 +777,14 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "test.assert.equal2.maxpat",
-				"bootpath" : "/Users/nilspeters/Documents/gits/Jamoma/Modules/Test/components",
+				"bootpath" : "/Users/lossius/dev/Jamoma/Modules/Test/components",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "test.finished.maxpat",
-				"bootpath" : "/Users/nilspeters/Documents/gits/Jamoma/Modules/Test/components",
+				"bootpath" : "/Users/lossius/dev/Jamoma/Modules/Test/components",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
