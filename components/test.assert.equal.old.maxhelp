@@ -63,7 +63,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 65.0, 585.0, 249.0, 19.0 ],
-					"text" : "test.assert.equal ThisTestFails 3.15 @issue 922"
+					"text" : "test.assert.equal.old ThisTestFails 3.15 @issue 922"
 				}
 
 			}
@@ -346,7 +346,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 70.0, 680.0, 292.0, 19.0 ],
-					"text" : "test.assert.equal ThisTestPassesAsWell 3.15 @reverse 1"
+					"text" : "test.assert.equal.old ThisTestPassesAsWell 3.15 @reverse 1"
 				}
 
 			}
@@ -443,13 +443,13 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 70.0, 500.0, 210.0, 19.0 ],
-					"text" : "test.assert.equal ThisTestFails 3.15"
+					"text" : "test.assert.equal.old ThisTestFails 3.15"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "@name", "jcom.test.assert.equal", "@description", "component for unit testing in Max" ],
+					"args" : [ "@name", "jcom.test.assert.equal.old", "@description", "component for unit testing in Max" ],
 					"bgmode" : 1,
 					"id" : "obj-8",
 					"maxclass" : "bpatcher",
@@ -470,7 +470,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 70.0, 355.0, 198.0, 19.0 ],
-					"text" : "test.assert.equal ThisTestPasses 3.14"
+					"text" : "test.assert.equal.old ThisTestPasses 3.14"
 				}
 
 			}
