@@ -155,7 +155,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 118.5, 208.5, 61.0, 20.0 ],
-									"presentation_rect" : [ 115.5, 208.5, 0.0, 0.0 ],
 									"text" : "jcom.thru"
 								}
 
@@ -170,7 +169,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 118.5, 182.5, 410.0, 20.0 ],
-									"presentation_rect" : [ 115.5, 182.5, 0.0, 0.0 ],
 									"text" : "jcom.test.assert.equal floatEqual @input 23.1 @compareTo 23.1"
 								}
 
@@ -496,13 +494,13 @@
 					"patching_rect" : [ 352.5, 185.625, 71.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"globalpatchername" : "",
-						"tags" : "",
 						"fontface" : 0,
 						"fontsize" : 12.0,
 						"default_fontface" : 0,
 						"digest" : "",
 						"default_fontname" : "Arial",
 						"fontname" : "Arial",
+						"tags" : "",
 						"default_fontsize" : 12.0,
 						"description" : ""
 					}
@@ -754,13 +752,13 @@
 					"patching_rect" : [ 352.5, 225.5, 61.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"globalpatchername" : "",
-						"tags" : "",
 						"fontface" : 0,
 						"fontsize" : 12.0,
 						"default_fontface" : 0,
 						"digest" : "",
 						"default_fontname" : "Arial",
 						"fontname" : "Arial",
+						"tags" : "",
 						"default_fontsize" : 12.0,
 						"description" : ""
 					}
@@ -785,7 +783,7 @@
 							"revision" : 5
 						}
 ,
-						"rect" : [ 578.0, 80.0, 640.0, 480.0 ],
+						"rect" : [ 578.0, 80.0, 765.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -814,7 +812,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 59.5, 363.5, 61.0, 20.0 ],
-									"presentation_rect" : [ 62.5, 363.5, 0.0, 0.0 ],
 									"text" : "jcom.thru"
 								}
 
@@ -828,8 +825,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 59.5, 338.5, 483.0, 20.0 ],
-									"text" : "jcom.test.assert.equal symWithAndWithoutArgument1 @input yo! man! @compareTo yo!"
+									"patching_rect" : [ 59.5, 338.5, 610.0, 20.0 ],
+									"text" : "jcom.test.assert.equal symWithAndWithoutArgument1 @input yo! man! @compareTo yo! @expectedResult false"
 								}
 
 							}
@@ -843,7 +840,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 59.5, 282.5, 61.0, 20.0 ],
-									"presentation_rect" : [ 63.5, 282.5, 0.0, 0.0 ],
 									"text" : "jcom.thru"
 								}
 
@@ -857,8 +853,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 59.5, 257.5, 483.0, 20.0 ],
-									"text" : "jcom.test.assert.equal symWithAndWithoutArgument1 @input yo! @compareTo yo! man!"
+									"patching_rect" : [ 59.5, 257.5, 610.0, 20.0 ],
+									"text" : "jcom.test.assert.equal symWithAndWithoutArgument1 @input yo! @compareTo yo! man! @expectedResult false"
 								}
 
 							}
@@ -1014,13 +1010,13 @@
 					"patching_rect" : [ 352.5, 145.75, 87.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"globalpatchername" : "",
-						"tags" : "",
 						"fontface" : 0,
 						"fontsize" : 12.0,
 						"default_fontface" : 0,
 						"digest" : "",
 						"default_fontname" : "Arial",
 						"fontname" : "Arial",
+						"tags" : "",
 						"default_fontsize" : 12.0,
 						"description" : ""
 					}
@@ -1074,7 +1070,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 61.5, 455.5, 61.0, 20.0 ],
-									"presentation_rect" : [ 60.5, 455.5, 0.0, 0.0 ],
 									"text" : "jcom.thru"
 								}
 
@@ -1104,7 +1099,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 61.5, 377.5, 61.0, 20.0 ],
-									"presentation_rect" : [ 60.5, 365.5, 0.0, 0.0 ],
 									"text" : "jcom.thru"
 								}
 
@@ -1134,7 +1128,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 61.5, 231.5, 61.0, 20.0 ],
-									"presentation_rect" : [ 63.5, 201.5, 0.0, 0.0 ],
 									"text" : "jcom.thru"
 								}
 
@@ -1164,7 +1157,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 61.5, 147.5, 61.0, 20.0 ],
-									"presentation_rect" : [ 58.5, 136.5, 0.0, 0.0 ],
 									"text" : "jcom.thru"
 								}
 
@@ -1194,7 +1186,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 682.5, 425.5, 61.0, 20.0 ],
-									"presentation_rect" : [ 61.5, 636.5, 0.0, 0.0 ],
 									"text" : "jcom.thru"
 								}
 
@@ -1223,7 +1214,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 682.5, 359.5, 61.0, 20.0 ],
-									"presentation_rect" : [ 60.5, 570.5, 0.0, 0.0 ],
 									"text" : "jcom.thru"
 								}
 
@@ -1252,7 +1242,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 682.5, 279.5, 61.0, 20.0 ],
-									"presentation_rect" : [ 58.5, 490.5, 0.0, 0.0 ],
 									"text" : "jcom.thru"
 								}
 
@@ -1281,7 +1270,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 682.5, 208.5, 61.0, 20.0 ],
-									"presentation_rect" : [ 58.5, 419.5, 0.0, 0.0 ],
 									"text" : "jcom.thru"
 								}
 
@@ -1310,7 +1298,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 682.5, 141.5, 61.0, 20.0 ],
-									"presentation_rect" : [ 63.5, 352.5, 0.0, 0.0 ],
 									"text" : "jcom.thru"
 								}
 
@@ -1339,7 +1326,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 682.5, 70.5, 61.0, 20.0 ],
-									"presentation_rect" : [ 65.5, 281.5, 0.0, 0.0 ],
 									"text" : "jcom.thru"
 								}
 
@@ -1662,13 +1648,13 @@
 					"patching_rect" : [ 352.5, 105.875, 63.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"globalpatchername" : "",
-						"tags" : "",
 						"fontface" : 0,
 						"fontsize" : 12.0,
 						"default_fontface" : 0,
 						"digest" : "",
 						"default_fontname" : "Arial",
 						"fontname" : "Arial",
+						"tags" : "",
 						"default_fontsize" : 12.0,
 						"description" : ""
 					}
@@ -1873,13 +1859,13 @@
 					"patching_rect" : [ 352.5, 66.0, 75.0, 20.0 ],
 					"saved_object_attributes" : 					{
 						"globalpatchername" : "",
-						"tags" : "",
 						"fontface" : 0,
 						"fontsize" : 12.0,
 						"default_fontface" : 0,
 						"digest" : "",
 						"default_fontname" : "Arial",
 						"fontname" : "Arial",
+						"tags" : "",
 						"default_fontsize" : 12.0,
 						"description" : ""
 					}
