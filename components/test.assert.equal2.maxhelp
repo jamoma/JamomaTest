@@ -105,37 +105,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 445.0, 437.0, 150.0, 34.0 ],
+					"patching_rect" : [ 519.0, 396.0, 150.0, 34.0 ],
 					"text" : "testing different outputs with two tests"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-35",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 962.0, 358.0, 58.0, 18.0 ],
-					"text" : "1 2, 1 - 5"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frgb" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"id" : "obj-33",
-					"linecount" : 4,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 908.0, 310.0, 218.0, 62.0 ],
-					"text" : "multiple messages can be sent, isolated by brakets '[ ]'  \nso [1 2] [1 - 5] is similar to the max message "
 				}
 
 			}
@@ -218,7 +189,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 899.0, 386.0, 150.0, 20.0 ],
+					"patching_rect" : [ 908.0, 343.0, 150.0, 20.0 ],
 					"text" : "woks with string data too"
 				}
 
@@ -372,12 +343,12 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-20",
-					"linecount" : 4,
+					"linecount" : 3,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 457.0, 365.0, 105.0, 62.0 ],
+					"patching_rect" : [ 496.25, 336.0, 144.0, 48.0 ],
 					"text" : "jcom.dataspace @dataspace time @input midi @output Hz"
 				}
 
@@ -392,8 +363,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 591.5, 372.0, 260.5, 48.0 ],
-					"text" : "test.assert.equal2 dumpout @input [getinput] [getoutput] [getdataspace] @expected [input midi] [output Hz] [dataspace time]"
+					"patching_rect" : [ 687.0, 336.0, 160.0, 48.0 ],
+					"text" : "test.assert.equal2 dumpout @input getinput @expected input midi"
 				}
 
 			}
@@ -423,34 +394,6 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 162.0, 236.0, 150.0, 48.0 ],
 					"text" : "<- this bang message is reserved by the testing system"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-17",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"patching_rect" : [ 458.0, 310.0, 32.5, 20.0 ],
-					"text" : "+ 0."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-18",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 519.0, 310.0, 349.0, 20.0 ],
-					"text" : "test.assert.equal2 foofoo @input [1 2] [1 -5] @expected [3.] [-4.]"
 				}
 
 			}
@@ -559,8 +502,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 257.0, 372.0, 177.0, 48.0 ],
-					"text" : "test.assert.equal2 midi2Hz @input [33.] [69.] [45.] @expected [55.0] [440.] [110.]"
+					"patching_rect" : [ 320.25, 336.0, 141.0, 48.0 ],
+					"text" : "test.assert.equal2 midi2Hz @input 69. @expected 440."
 				}
 
 			}
@@ -630,28 +573,11 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-18", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-17", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-17", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-18", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"color" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
 					"destination" : [ "obj-20", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 696.5, 386.0, 644.875, 386.0, 644.875, 333.0, 505.75, 333.0 ],
 					"source" : [ "obj-19", 0 ]
 				}
 
@@ -777,14 +703,14 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "test.assert.equal2.maxpat",
-				"bootpath" : "/Users/lossius/dev/Jamoma/Modules/Test/components",
+				"bootpath" : "/Users/nilspeters/Documents/gits/Jamoma/Modules/Test/components",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "test.finished.maxpat",
-				"bootpath" : "/Users/lossius/dev/Jamoma/Modules/Test/components",
+				"bootpath" : "/Users/nilspeters/Documents/gits/Jamoma/Modules/Test/components",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
