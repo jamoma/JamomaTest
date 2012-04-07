@@ -7,7 +7,7 @@
 			"revision" : 5
 		}
 ,
-		"rect" : [ 49.0, 91.0, 1153.0, 640.0 ],
+		"rect" : [ 46.0, 86.0, 1288.0, 739.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -30,13 +30,161 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"id" : "obj-20",
+					"frgb" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"id" : "obj-45",
 					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 145.5, 642.0, 190.0, 48.0 ],
+					"text" : "Issue number as registered in redmine.jamoma.org. Default is \"none\"."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"id" : "obj-44",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 145.5, 573.666687, 190.0, 62.0 ],
+					"text" : "Expected result of the test. Possible values are 1, TRUE, true, True or 0, FALSE, false, False. Default is true."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"id" : "obj-43",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 145.5, 533.333374, 190.0, 34.0 ],
+					"text" : "Value(s) received in left inlet will be compared to this value(s)."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"id" : "obj-42",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 145.5, 493.0, 192.0, 34.0 ],
+					"text" : "Value(s) sent to the system that is to be tested."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"id" : "obj-41",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 33.5, 642.0, 105.0, 20.0 ],
+					"text" : "@issue"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"id" : "obj-35",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 33.5, 573.666687, 105.0, 20.0 ],
+					"text" : "@expectedResult"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"id" : "obj-34",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 33.5, 533.333374, 105.0, 20.0 ],
+					"text" : "@compareTo"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"id" : "obj-33",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 33.5, 493.0, 105.0, 20.0 ],
+					"text" : "@input"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"id" : "obj-18",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 33.5, 460.0, 105.0, 20.0 ],
+					"text" : "Attributes:"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"bubblepoint" : 0.34,
+					"bubbleside" : 2,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"frgb" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"id" : "obj-39",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 675.5625, 76.0, 123.0, 81.0 ],
+					"text" : "@input defines what is sent from the left outlet to the system under test"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-20",
+					"linecount" : 4,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 358.5, 519.0, 147.0, 48.0 ],
+					"patching_rect" : [ 397.5, 519.333374, 108.0, 62.0 ],
 					"text" : "jcom.dataspace @dataspace time @input midi @output Hz"
 				}
 
@@ -51,8 +199,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 534.0, 451.0, 160.0, 48.0 ],
-					"text" : "jcom.test.assert.equal dumpout @input getinput @expected input midi"
+					"patching_rect" : [ 534.0, 451.0, 184.0, 48.0 ],
+					"text" : "jcom.test.assert.equal dumpout @input getinput @compareTo input midi"
 				}
 
 			}
@@ -61,13 +209,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-1",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 534.0, 371.0, 141.0, 48.0 ],
-					"text" : "jcom.test.assert.equal midi2Hz @input 69. @expected 440."
+					"patching_rect" : [ 534.0, 371.0, 184.0, 34.0 ],
+					"text" : "jcom.test.assert.equal midi2Hz @input 69. @compareTo 440."
 				}
 
 			}
@@ -80,7 +228,7 @@
 					"name" : "jcom.maxhelpui.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 0.0, 0.0, 1153.0, 70.0 ],
+					"patching_rect" : [ 0.0, 0.0, 1288.0, 70.0 ],
 					"varname" : "maxhelpui"
 				}
 
@@ -88,42 +236,25 @@
 , 			{
 				"box" : 				{
 					"bubble" : 1,
-					"bubblepoint" : 0.15,
+					"bubblepoint" : 0.03,
 					"bubbleside" : 2,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"frgb" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"id" : "obj-40",
-					"linecount" : 2,
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 823.0, 105.0, 201.0, 53.0 ],
-					"text" : "@expected defines what should be returned from the system under test"
+					"patching_rect" : [ 801.5, 76.0, 146.0, 81.0 ],
+					"text" : "@compareTo defines what the test will compare the returned value(s) to."
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"bubble" : 1,
-					"bubbleside" : 2,
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"frgb" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"id" : "obj-39",
-					"linecount" : 3,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 702.0, 98.0, 121.0, 67.0 ],
-					"text" : "@input defines what is sent to the system under test"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubble" : 1,
-					"bubblepoint" : 0.53,
+					"bubblepoint" : 0.94,
 					"bubbleside" : 2,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -133,7 +264,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 585.0, 105.0, 117.0, 53.0 ],
+					"patching_rect" : [ 563.625, 104.0, 108.0, 53.0 ],
 					"text" : "first arg is the name of the test"
 				}
 
@@ -141,15 +272,17 @@
 , 			{
 				"box" : 				{
 					"bubble" : 1,
+					"bubblepoint" : 0.11,
 					"bubbleside" : 2,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"frgb" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"id" : "obj-36",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 424.625, 121.0, 129.25, 39.0 ],
+					"patching_rect" : [ 478.8125, 104.0, 80.875, 53.0 ],
 					"text" : "the system under test"
 				}
 
@@ -164,7 +297,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 923.0, 526.0, 150.0, 34.0 ],
+					"patching_rect" : [ 1028.0, 526.0, 150.0, 34.0 ],
 					"text" : "testing different outputs with two tests"
 				}
 
@@ -178,7 +311,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 923.0, 314.0, 212.0, 20.0 ],
+					"patching_rect" : [ 1028.0, 314.0, 212.0, 20.0 ],
 					"text" : "data can be of different list length"
 				}
 
@@ -192,8 +325,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 923.0, 255.0, 212.0, 20.0 ],
-					"text" : "@reverse attribute for testing a NOT "
+					"patching_rect" : [ 1028.0, 255.0, 255.0, 20.0 ],
+					"text" : "@testReturnResult attribute for testing a NOT "
 				}
 
 			}
@@ -206,7 +339,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 923.0, 225.0, 191.0, 20.0 ],
+					"patching_rect" : [ 1028.0, 225.0, 191.0, 20.0 ],
 					"text" : "floats and ints are not the same "
 				}
 
@@ -220,8 +353,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 923.0, 195.0, 191.0, 20.0 ],
-					"text" : "single number input and expected"
+					"patching_rect" : [ 1028.0, 195.0, 191.0, 20.0 ],
+					"text" : "single float input and expected"
 				}
 
 			}
@@ -234,8 +367,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 923.0, 165.0, 191.0, 20.0 ],
-					"text" : "single number input and expected"
+					"patching_rect" : [ 1028.0, 165.0, 235.0, 20.0 ],
+					"text" : "single float input and expected"
 				}
 
 			}
@@ -248,7 +381,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 923.0, 377.0, 150.0, 20.0 ],
+					"patching_rect" : [ 1028.0, 377.0, 150.0, 20.0 ],
 					"text" : "woks with string data too"
 				}
 
@@ -277,8 +410,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 534.0, 284.0, 387.0, 20.0 ],
-					"text" : "jcom.test.assert.equal reversefoo2 @input 1. @expected 2 @reverse 1"
+					"patching_rect" : [ 534.0, 284.0, 461.0, 20.0 ],
+					"text" : "jcom.test.assert.equal reversefoo2 @input 1. @compareTo 2 @expectedResult false"
 				}
 
 			}
@@ -306,8 +439,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 534.0, 255.0, 397.0, 20.0 ],
-					"text" : "jcom.test.assert.equal reversefoo1 @input 1. @expected 2.1 @reverse 1"
+					"patching_rect" : [ 534.0, 255.0, 471.0, 20.0 ],
+					"text" : "jcom.test.assert.equal reversefoo1 @input 1. @compareTo 2.1 @expectedResult false"
 				}
 
 			}
@@ -335,8 +468,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 534.0, 225.0, 301.0, 20.0 ],
-					"text" : "jcom.test.assert.equal badfoo2 @input 1. @expected 2"
+					"patching_rect" : [ 534.0, 225.0, 314.0, 20.0 ],
+					"text" : "jcom.test.assert.equal badfoo2 @input 1. @compareTo 2"
 				}
 
 			}
@@ -364,8 +497,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 534.0, 195.0, 311.0, 20.0 ],
-					"text" : "jcom.test.assert.equal badfoo1 @input 1. @expected 2.1"
+					"patching_rect" : [ 534.0, 195.0, 324.0, 20.0 ],
+					"text" : "jcom.test.assert.equal badfoo1 @input 1. @compareTo 2.1"
 				}
 
 			}
@@ -392,8 +525,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 534.0, 314.0, 299.0, 20.0 ],
-					"text" : "jcom.test.assert.equal listfoo @input 1 2 @expected 3."
+					"patching_rect" : [ 534.0, 314.0, 312.0, 20.0 ],
+					"text" : "jcom.test.assert.equal listfoo @input 1 2 @compareTo 3."
 				}
 
 			}
@@ -449,8 +582,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 534.0, 165.0, 371.0, 20.0 ],
-					"text" : "jcom.test.assert.equal foooooooooooooooo @input 1. @expected 2."
+					"patching_rect" : [ 534.0, 165.0, 290.0, 20.0 ],
+					"text" : "jcom.test.assert.equal foo @input 1. @compareTo 2."
 				}
 
 			}
@@ -528,7 +661,7 @@
 					"destination" : [ "obj-20", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 543.5, 426.0, 368.0, 426.0 ],
+					"midpoints" : [ 543.5, 426.0, 407.0, 426.0 ],
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -593,7 +726,7 @@
 					"destination" : [ "obj-20", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 543.5, 508.5, 368.0, 508.5 ],
+					"midpoints" : [ 543.5, 508.5, 407.0, 508.5 ],
 					"source" : [ "obj-19", 0 ]
 				}
 
@@ -604,7 +737,7 @@
 					"destination" : [ "obj-1", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 368.0, 578.0, 353.125, 578.0, 353.125, 367.0, 543.5, 367.0 ],
+					"midpoints" : [ 407.0, 592.0, 387.125, 592.0, 387.125, 367.0, 543.5, 367.0 ],
 					"source" : [ "obj-20", 0 ]
 				}
 
@@ -615,7 +748,7 @@
 					"destination" : [ "obj-19", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 496.0, 576.0, 518.625, 576.0, 518.625, 441.0, 543.5, 441.0 ],
+					"midpoints" : [ 496.0, 588.0, 518.625, 588.0, 518.625, 441.0, 543.5, 441.0 ],
 					"source" : [ "obj-20", 1 ]
 				}
 
