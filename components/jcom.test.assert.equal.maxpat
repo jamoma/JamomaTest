@@ -544,7 +544,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 254.0, 134.0, 24.0, 20.0 ],
+									"patching_rect" : [ 243.0, 134.0, 24.0, 20.0 ],
 									"text" : "t 2"
 								}
 
@@ -585,9 +585,9 @@
 									"maxclass" : "newobj",
 									"numinlets" : 2,
 									"numoutlets" : 2,
-									"outlettype" : [ "bang", "" ],
-									"patching_rect" : [ 217.0, 105.0, 94.0, 20.0 ],
-									"text" : "sel bang"
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 217.0, 106.0, 68.0, 20.0 ],
+									"text" : "route bang"
 								}
 
 							}
@@ -682,7 +682,7 @@
 									"destination" : [ "obj-6", 1 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 301.5, 245.0, 140.5, 245.0 ],
+									"midpoints" : [ 275.5, 245.0, 140.5, 245.0 ],
 									"source" : [ "obj-21", 1 ]
 								}
 
@@ -720,7 +720,7 @@
 									"destination" : [ "obj-22", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 263.5, 175.0, 84.5, 175.0 ],
+									"midpoints" : [ 252.5, 175.0, 84.5, 175.0 ],
 									"source" : [ "obj-24", 0 ]
 								}
 
