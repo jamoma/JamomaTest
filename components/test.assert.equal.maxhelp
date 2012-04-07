@@ -219,7 +219,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 519.0, 250.0, 367.0, 20.0 ],
-					"text" : "test.assert.equal2 reversefoo2 @input 1. @expected 2 @reverse 1"
+					"text" : "test.assert.equal reversefoo2 @input 1. @expected 2 @reverse 1"
 				}
 
 			}
@@ -248,7 +248,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 519.0, 221.0, 377.0, 20.0 ],
-					"text" : "test.assert.equal2 reversefoo1 @input 1. @expected 2.1 @reverse 1"
+					"text" : "test.assert.equal reversefoo1 @input 1. @expected 2.1 @reverse 1"
 				}
 
 			}
@@ -277,7 +277,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 519.0, 191.0, 281.0, 20.0 ],
-					"text" : "test.assert.equal2 badfoo2 @input 1. @expected 2"
+					"text" : "test.assert.equal badfoo2 @input 1. @expected 2"
 				}
 
 			}
@@ -306,7 +306,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 519.0, 161.0, 291.0, 20.0 ],
-					"text" : "test.assert.equal2 badfoo1 @input 1. @expected 2.1"
+					"text" : "test.assert.equal badfoo1 @input 1. @expected 2.1"
 				}
 
 			}
@@ -334,7 +334,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 519.0, 280.0, 279.0, 20.0 ],
-					"text" : "test.assert.equal2 listfoo @input 1 2 @expected 3."
+					"text" : "test.assert.equal listfoo @input 1 2 @expected 3."
 				}
 
 			}
@@ -364,7 +364,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 687.0, 336.0, 160.0, 48.0 ],
-					"text" : "test.assert.equal2 dumpout @input getinput @expected input midi"
+					"text" : "test.assert.equal dumpout @input getinput @expected input midi"
 				}
 
 			}
@@ -421,7 +421,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 519.0, 131.0, 351.0, 20.0 ],
-					"text" : "test.assert.equal2 foooooooooooooooo @input 1. @expected 2."
+					"text" : "test.assert.equal foooooooooooooooo @input 1. @expected 2."
 				}
 
 			}
@@ -503,7 +503,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 320.25, 336.0, 141.0, 48.0 ],
-					"text" : "test.assert.equal2 midi2Hz @input 69. @expected 440."
+					"text" : "test.assert.equal midi2Hz @input 69. @expected 440."
 				}
 
 			}
@@ -702,7 +702,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "test.assert.equal2.maxpat",
+				"name" : "test.assert.equal.maxpat",
 				"bootpath" : "/Users/nilspeters/Documents/gits/Jamoma/Modules/Test/components",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
