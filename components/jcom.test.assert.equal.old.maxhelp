@@ -66,7 +66,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 378.0, 100.0, 100.0, 18.0 ],
-					"text" : "test.assert.equal"
+					"text" : "jcom.test.assert.equal"
 				}
 
 			}
@@ -122,7 +122,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 64.0, 639.0, 283.0, 20.0 ],
-					"text" : "test.assert.equal.old ThisTestFails 3.15 @issue 922"
+					"text" : "jcom.test.assert.equal.old ThisTestFails 3.15 @issue 922"
 				}
 
 			}
@@ -403,7 +403,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 69.0, 734.0, 335.0, 20.0 ],
-					"text" : "test.assert.equal.old ThisTestPassesAsWell 3.15 @reverse 1"
+					"text" : "jcom.test.assert.equal.old ThisTestPassesAsWell 3.15 @reverse 1"
 				}
 
 			}
@@ -500,13 +500,13 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 69.0, 554.0, 224.0, 20.0 ],
-					"text" : "test.assert.equal.old ThisTestFails 3.15"
+					"text" : "jcom.test.assert.equal.old ThisTestFails 3.15"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "@name", "jcom.test.assert.equal.old", "@description", "component for unit testing in Max" ],
+					"args" : [ "@name", "jcom.jcom.test.assert.equal.old", "@description", "component for unit testing in Max" ],
 					"bgmode" : 1,
 					"id" : "obj-8",
 					"maxclass" : "bpatcher",
@@ -527,7 +527,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 69.0, 409.0, 232.0, 20.0 ],
-					"text" : "test.assert.equal.old ThisTestPasses 3.14"
+					"text" : "jcom.test.assert.equal.old ThisTestPasses 3.14"
 				}
 
 			}
@@ -645,7 +645,7 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "test.assert.equal.old.maxpat",
+				"name" : "jcom.test.assert.equal.old.maxpat",
 				"bootpath" : "/Users/lossius/dev/Jamoma/Modules/Test/components",
 				"patcherrelativepath" : "",
 				"type" : "JSON",

@@ -52,7 +52,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 534.0, 451.0, 160.0, 48.0 ],
-					"text" : "test.assert.equal dumpout @input getinput @expected input midi"
+					"text" : "jcom.test.assert.equal dumpout @input getinput @expected input midi"
 				}
 
 			}
@@ -67,13 +67,13 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 534.0, 371.0, 141.0, 48.0 ],
-					"text" : "test.assert.equal midi2Hz @input 69. @expected 440."
+					"text" : "jcom.test.assert.equal midi2Hz @input 69. @expected 440."
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "@name", "jcom.test.assert.equal", "@description", "component for unit testing in Max" ],
+					"args" : [ "@name", "jcom.jcom.test.assert.equal", "@description", "component for unit testing in Max" ],
 					"bgmode" : 1,
 					"id" : "obj-2",
 					"maxclass" : "bpatcher",
@@ -278,7 +278,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 534.0, 284.0, 367.0, 20.0 ],
-					"text" : "test.assert.equal reversefoo2 @input 1. @expected 2 @reverse 1"
+					"text" : "jcom.test.assert.equal reversefoo2 @input 1. @expected 2 @reverse 1"
 				}
 
 			}
@@ -307,7 +307,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 534.0, 255.0, 377.0, 20.0 ],
-					"text" : "test.assert.equal reversefoo1 @input 1. @expected 2.1 @reverse 1"
+					"text" : "jcom.test.assert.equal reversefoo1 @input 1. @expected 2.1 @reverse 1"
 				}
 
 			}
@@ -336,7 +336,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 534.0, 225.0, 281.0, 20.0 ],
-					"text" : "test.assert.equal badfoo2 @input 1. @expected 2"
+					"text" : "jcom.test.assert.equal badfoo2 @input 1. @expected 2"
 				}
 
 			}
@@ -365,7 +365,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 534.0, 195.0, 291.0, 20.0 ],
-					"text" : "test.assert.equal badfoo1 @input 1. @expected 2.1"
+					"text" : "jcom.test.assert.equal badfoo1 @input 1. @expected 2.1"
 				}
 
 			}
@@ -393,7 +393,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 534.0, 314.0, 279.0, 20.0 ],
-					"text" : "test.assert.equal listfoo @input 1 2 @expected 3."
+					"text" : "jcom.test.assert.equal listfoo @input 1 2 @expected 3."
 				}
 
 			}
@@ -450,7 +450,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 534.0, 165.0, 351.0, 20.0 ],
-					"text" : "test.assert.equal foooooooooooooooo @input 1. @expected 2."
+					"text" : "jcom.test.assert.equal foooooooooooooooo @input 1. @expected 2."
 				}
 
 			}
@@ -517,7 +517,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 33.0, 296.0, 75.0, 20.0 ],
-					"text" : "test.finished"
+					"text" : "jcom.test.finished"
 				}
 
 			}
@@ -721,14 +721,14 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "test.finished.maxpat",
+				"name" : "jcom.test.finished.maxpat",
 				"bootpath" : "/Users/lossius/dev/Jamoma/Modules/Test/components",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "test.assert.equal.maxpat",
+				"name" : "jcom.test.assert.equal.maxpat",
 				"bootpath" : "/Users/lossius/dev/Jamoma/Modules/Test/components",
 				"patcherrelativepath" : "",
 				"type" : "JSON",

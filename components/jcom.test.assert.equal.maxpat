@@ -1270,7 +1270,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 676.75, 183.5, 107.0, 43.0 ],
-					"text" : "print test.assert.equal:unknownAttribute"
+					"text" : "print jcom.test.assert.equal:unknownAttribute"
 				}
 
 			}
