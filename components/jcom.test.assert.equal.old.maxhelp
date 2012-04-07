@@ -65,7 +65,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 378.0, 100.0, 100.0, 18.0 ],
+					"patching_rect" : [ 378.0, 100.0, 126.0, 18.0 ],
 					"text" : "jcom.test.assert.equal"
 				}
 
@@ -121,7 +121,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 64.0, 639.0, 283.0, 20.0 ],
+					"patching_rect" : [ 64.0, 639.0, 311.0, 20.0 ],
 					"text" : "jcom.test.assert.equal.old ThisTestFails 3.15 @issue 922"
 				}
 
@@ -402,7 +402,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 69.0, 734.0, 335.0, 20.0 ],
+					"patching_rect" : [ 69.0, 734.0, 361.0, 20.0 ],
 					"text" : "jcom.test.assert.equal.old ThisTestPassesAsWell 3.15 @reverse 1"
 				}
 
@@ -426,13 +426,11 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-12",
-					"linecount" : 4,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 519.0, 469.0, 158.0, 60.0 ],
-					"text" : "FAIL ThisTestFails \"RECEIVED: TIMEOUT\" --- http://redmine.jamoma.org/issues/922"
+					"patching_rect" : [ 519.0, 469.0, 158.0, 18.0 ]
 				}
 
 			}
@@ -499,14 +497,14 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 69.0, 554.0, 224.0, 20.0 ],
+					"patching_rect" : [ 69.0, 554.0, 244.0, 20.0 ],
 					"text" : "jcom.test.assert.equal.old ThisTestFails 3.15"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "@name", "jcom.jcom.test.assert.equal.old", "@description", "component for unit testing in Max" ],
+					"args" : [ "@name", "jcom.test.assert.equal.old", "@description", "component for unit testing in Max" ],
 					"bgmode" : 1,
 					"id" : "obj-8",
 					"maxclass" : "bpatcher",
@@ -526,7 +524,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 69.0, 409.0, 232.0, 20.0 ],
+					"patching_rect" : [ 69.0, 409.0, 260.0, 20.0 ],
 					"text" : "jcom.test.assert.equal.old ThisTestPasses 3.14"
 				}
 

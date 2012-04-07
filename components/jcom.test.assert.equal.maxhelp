@@ -73,7 +73,7 @@
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "@name", "jcom.jcom.test.assert.equal", "@description", "component for unit testing in Max" ],
+					"args" : [ "@name", "jcom.test.assert.equal", "@description", "component for unit testing in Max" ],
 					"bgmode" : 1,
 					"id" : "obj-2",
 					"maxclass" : "bpatcher",
@@ -277,7 +277,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 534.0, 284.0, 367.0, 20.0 ],
+					"patching_rect" : [ 534.0, 284.0, 387.0, 20.0 ],
 					"text" : "jcom.test.assert.equal reversefoo2 @input 1. @expected 2 @reverse 1"
 				}
 
@@ -306,7 +306,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 534.0, 255.0, 377.0, 20.0 ],
+					"patching_rect" : [ 534.0, 255.0, 397.0, 20.0 ],
 					"text" : "jcom.test.assert.equal reversefoo1 @input 1. @expected 2.1 @reverse 1"
 				}
 
@@ -335,7 +335,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 534.0, 225.0, 281.0, 20.0 ],
+					"patching_rect" : [ 534.0, 225.0, 301.0, 20.0 ],
 					"text" : "jcom.test.assert.equal badfoo2 @input 1. @expected 2"
 				}
 
@@ -364,7 +364,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 534.0, 195.0, 291.0, 20.0 ],
+					"patching_rect" : [ 534.0, 195.0, 311.0, 20.0 ],
 					"text" : "jcom.test.assert.equal badfoo1 @input 1. @expected 2.1"
 				}
 
@@ -392,7 +392,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 534.0, 314.0, 279.0, 20.0 ],
+					"patching_rect" : [ 534.0, 314.0, 299.0, 20.0 ],
 					"text" : "jcom.test.assert.equal listfoo @input 1 2 @expected 3."
 				}
 
@@ -449,7 +449,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 534.0, 165.0, 351.0, 20.0 ],
+					"patching_rect" : [ 534.0, 165.0, 371.0, 20.0 ],
 					"text" : "jcom.test.assert.equal foooooooooooooooo @input 1. @expected 2."
 				}
 
@@ -516,7 +516,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 33.0, 296.0, 75.0, 20.0 ],
+					"patching_rect" : [ 33.0, 296.0, 101.0, 20.0 ],
 					"text" : "jcom.test.finished"
 				}
 
