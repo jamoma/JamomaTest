@@ -1,0 +1,56 @@
+title: jcom.test.assert.equal
+author: [Jamoma]
+created_at: 2012/4/4
+tags: [testing, max]
+
+brief: component for unit tetsing in Max 
+
+desc: >
+ use jcom.test.assert.equal to rapidly create unit tests that can test patches and externals  
+
+inlets:
+  - id: 0
+    type: float/int/list
+    desc: max messages returning from the device under test	
+
+outlets:
+ - id: 0
+   type: float/int/list
+   desc: max message(s) sent out to the device under test
+
+outputs:
+ - name: int
+   desc: An integer sent out to the device under test
+ - name: float
+   desc: A float number sent out to the device under test
+ - name: list
+   desc: A list sent out to the device under test
+   
+args:
+ - name: name
+   type: symbol
+   desc: descriptive name of the test, used for displaying the results  
+
+attributes:
+ - name: input
+   type: int float string list
+   desc: Value(s) sent to the system under test.
+   default: none
+ - name: compareTo
+   type: float
+   desc: expected values that are supposed to be returned from the device under test.
+   default: none
+ - name: issue
+   type: int
+   desc: Issue number as registered in http://redmine.jamoma.org. 
+   default: none
+ - name: expectedResult	
+   type: boolean
+   desc: Expected result of the test.
+   default: true
+
+seealso:
+ - jmod.test.finish
+ - jmod.test.start
+
+discussion: Jamoma is a free and open source project. http://www.jamoma.org 
