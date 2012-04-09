@@ -37,16 +37,20 @@ attributes:
    desc: Value(s) sent to the system under test.
    default: none
  - name: compareTo
-   type: float
+   type: float int list
    desc: expected values that are supposed to be returned from the device under test.
    default: none
  - name: issue
-   type: int
+   type: float int list
    desc: Issue number as registered in http://redmine.jamoma.org. 
    default: none
  - name: expectedResult	
    type: boolean
    desc: Expected result of the test.
+   default: true
+ - name: tolerance	
+   type: float int
+   desc: defines tolerance region in which a test can still pass
    default: true
 
 seealso:
