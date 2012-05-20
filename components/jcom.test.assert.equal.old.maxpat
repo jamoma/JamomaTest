@@ -28,6 +28,35 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-60",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 659.0, 347.0, 169.0, 20.0 ],
+					"text" : "r jamoma-how-many-asserts?"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-61",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 659.0, 381.0, 153.0, 20.0 ],
+					"text" : "s jamoma-assert-count-me"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
 					"id" : "obj-57",
@@ -525,12 +554,12 @@
 						"fontface" : 0,
 						"fontsize" : 10.0,
 						"default_fontface" : 0,
-						"globalpatchername" : "",
 						"digest" : "",
-						"default_fontname" : "Verdana",
 						"tags" : "",
-						"default_fontsize" : 10.0,
+						"default_fontname" : "Verdana",
+						"globalpatchername" : "",
 						"fontname" : "Verdana",
+						"default_fontsize" : 10.0,
 						"description" : ""
 					}
 ,
@@ -586,7 +615,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 515.0, 210.0, 151.0, 19.0 ],
+					"patching_rect" : [ 515.0, 210.0, 171.0, 19.0 ],
 					"text" : "print jcom.test.assert.equal.old:"
 				}
 
@@ -804,12 +833,12 @@
 						"fontface" : 0,
 						"fontsize" : 10.0,
 						"default_fontface" : 0,
-						"globalpatchername" : "",
 						"digest" : "",
-						"default_fontname" : "Arial",
 						"tags" : "",
-						"default_fontsize" : 10.0,
+						"default_fontname" : "Arial",
+						"globalpatchername" : "",
 						"fontname" : "Arial",
+						"default_fontsize" : 10.0,
 						"description" : ""
 					}
 ,
@@ -993,12 +1022,12 @@
 						"fontface" : 0,
 						"fontsize" : 10.0,
 						"default_fontface" : 0,
-						"globalpatchername" : "",
 						"digest" : "",
-						"default_fontname" : "Arial",
 						"tags" : "",
-						"default_fontsize" : 10.0,
+						"default_fontname" : "Arial",
+						"globalpatchername" : "",
 						"fontname" : "Arial",
+						"default_fontsize" : 10.0,
 						"description" : ""
 					}
 ,
@@ -1319,12 +1348,12 @@
 						"fontface" : 0,
 						"fontsize" : 10.0,
 						"default_fontface" : 0,
-						"globalpatchername" : "",
 						"digest" : "",
-						"default_fontname" : "Verdana",
 						"tags" : "",
-						"default_fontsize" : 10.0,
+						"default_fontname" : "Verdana",
+						"globalpatchername" : "",
 						"fontname" : "Verdana",
+						"default_fontsize" : 10.0,
 						"description" : ""
 					}
 ,
@@ -1380,7 +1409,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 557.0, 275.0, 151.0, 19.0 ],
+					"patching_rect" : [ 557.0, 275.0, 197.0, 19.0 ],
 					"text" : "print jcom.test.assert.equal.old:Error"
 				}
 
@@ -2213,6 +2242,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-6", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-61", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-60", 0 ]
 				}
 
 			}
