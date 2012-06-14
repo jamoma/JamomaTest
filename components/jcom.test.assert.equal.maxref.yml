@@ -11,20 +11,29 @@ desc: >
 inlets:
   - id: 0
     type: float/int/list
-    desc: max messages returning from the device under test	
+    desc: max message returning from the patch under test	
+  - id: 1
+    type: bang
+    desc: local trigger for starting test
+  - id: 2
+    type: string
+    desc: alternative fail message, or other annotation	
 
 outlets:
  - id: 0
    type: float/int/list
-   desc: max message(s) sent out to the device under test
+   desc: max message sent out to the patch under test
+ - id: 2
+   type: string
+   desc: test result
 
 outputs:
  - name: int
-   desc: An integer sent out to the device under test
+   desc: An integer sent out to the patch under test
  - name: float
-   desc: A float number sent out to the device under test
+   desc: A float number sent out to the patch under test
  - name: list
-   desc: A list sent out to the device under test
+   desc: A list sent out to the patch under test
    
 args:
  - name: name
@@ -34,7 +43,7 @@ args:
 attributes:
  - name: input
    type: int float string list
-   desc: Value(s) sent to the system under test.
+   desc: Value(s) sent to the patch under test.
    default: none
  - name: compareTo
    type: float int list

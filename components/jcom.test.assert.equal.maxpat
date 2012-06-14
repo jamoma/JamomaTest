@@ -44,7 +44,9 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"annotation" : "",
+					"comment" : "local trigger for starting the test",
+					"hint" : "",
 					"id" : "obj-31",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
@@ -99,7 +101,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "test result",
 					"id" : "obj-19",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
@@ -301,16 +303,16 @@
 ,
 									"patching_rect" : [ 202.0, 102.0, 75.0, 20.0 ],
 									"saved_object_attributes" : 									{
-										"fontname" : "Arial",
-										"default_fontsize" : 12.0,
-										"description" : "",
-										"globalpatchername" : "",
+										"digest" : "",
 										"fontface" : 0,
 										"fontsize" : 12.0,
-										"default_fontface" : 0,
+										"default_fontname" : "Arial",
+										"default_fontsize" : 12.0,
+										"description" : "",
 										"tags" : "",
-										"digest" : "",
-										"default_fontname" : "Arial"
+										"fontname" : "Arial",
+										"default_fontface" : 0,
+										"globalpatchername" : ""
 									}
 ,
 									"text" : "p bangHack"
@@ -448,16 +450,16 @@
 ,
 									"patching_rect" : [ 121.0, 102.0, 75.0, 20.0 ],
 									"saved_object_attributes" : 									{
-										"fontname" : "Arial",
-										"default_fontsize" : 12.0,
-										"description" : "",
-										"globalpatchername" : "",
+										"digest" : "",
 										"fontface" : 0,
 										"fontsize" : 12.0,
-										"default_fontface" : 0,
+										"default_fontname" : "Arial",
+										"default_fontsize" : 12.0,
+										"description" : "",
 										"tags" : "",
-										"digest" : "",
-										"default_fontname" : "Arial"
+										"fontname" : "Arial",
+										"default_fontface" : 0,
+										"globalpatchername" : ""
 									}
 ,
 									"text" : "p bangHack"
@@ -1350,16 +1352,16 @@
 ,
 													"patching_rect" : [ 864.0, 115.0, 64.0, 20.0 ],
 													"saved_object_attributes" : 													{
-														"fontname" : "Arial",
-														"default_fontsize" : 12.0,
-														"description" : "",
-														"globalpatchername" : "",
+														"digest" : "",
 														"fontface" : 0,
 														"fontsize" : 12.0,
-														"default_fontface" : 0,
+														"default_fontname" : "Arial",
+														"default_fontsize" : 12.0,
+														"description" : "",
 														"tags" : "",
-														"digest" : "",
-														"default_fontname" : "Arial"
+														"fontname" : "Arial",
+														"default_fontface" : 0,
+														"globalpatchername" : ""
 													}
 ,
 													"text" : "p"
@@ -1831,16 +1833,16 @@
 ,
 													"patching_rect" : [ 551.0, 115.0, 64.0, 20.0 ],
 													"saved_object_attributes" : 													{
-														"fontname" : "Arial",
-														"default_fontsize" : 12.0,
-														"description" : "",
-														"globalpatchername" : "",
+														"digest" : "",
 														"fontface" : 0,
 														"fontsize" : 12.0,
-														"default_fontface" : 0,
+														"default_fontname" : "Arial",
+														"default_fontsize" : 12.0,
+														"description" : "",
 														"tags" : "",
-														"digest" : "",
-														"default_fontname" : "Arial"
+														"fontname" : "Arial",
+														"default_fontface" : 0,
+														"globalpatchername" : ""
 													}
 ,
 													"text" : "p"
@@ -2349,16 +2351,16 @@
 ,
 									"patching_rect" : [ 121.0, 178.0, 149.0, 20.0 ],
 									"saved_object_attributes" : 									{
-										"fontname" : "Arial",
-										"default_fontsize" : 12.0,
-										"description" : "",
-										"globalpatchername" : "",
+										"digest" : "",
 										"fontface" : 0,
 										"fontsize" : 12.0,
-										"default_fontface" : 0,
+										"default_fontname" : "Arial",
+										"default_fontsize" : 12.0,
+										"description" : "",
 										"tags" : "",
-										"digest" : "",
-										"default_fontname" : "Arial"
+										"fontname" : "Arial",
+										"default_fontface" : 0,
+										"globalpatchername" : ""
 									}
 ,
 									"text" : "p jcom.compare.tolerance"
@@ -2562,16 +2564,16 @@
 ,
 					"patching_rect" : [ 72.0, 210.0, 237.000031, 19.0 ],
 					"saved_object_attributes" : 					{
-						"fontname" : "Arial",
-						"default_fontsize" : 12.0,
-						"description" : "",
-						"globalpatchername" : "",
+						"digest" : "",
 						"fontface" : 0,
 						"fontsize" : 12.0,
-						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"default_fontsize" : 12.0,
+						"description" : "",
 						"tags" : "",
-						"digest" : "",
-						"default_fontname" : "Arial"
+						"fontname" : "Arial",
+						"default_fontface" : 0,
+						"globalpatchername" : ""
 					}
 ,
 					"text" : "p comparison"
@@ -2891,16 +2893,16 @@
 ,
 					"patching_rect" : [ 47.0, 696.0, 110.0, 19.0 ],
 					"saved_object_attributes" : 					{
-						"fontname" : "Arial",
-						"default_fontsize" : 12.0,
-						"description" : "",
-						"globalpatchername" : "",
+						"digest" : "",
 						"fontface" : 0,
 						"fontsize" : 12.0,
-						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"default_fontsize" : 12.0,
+						"description" : "",
 						"tags" : "",
-						"digest" : "",
-						"default_fontname" : "Arial"
+						"fontname" : "Arial",
+						"default_fontface" : 0,
+						"globalpatchername" : ""
 					}
 ,
 					"text" : "p output-formatting"
@@ -2924,7 +2926,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "test message sent out to the patch under test",
 					"id" : "obj-57",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
@@ -3302,16 +3304,16 @@
 ,
 					"patching_rect" : [ 630.25, 191.0, 67.500031, 19.0 ],
 					"saved_object_attributes" : 					{
-						"fontname" : "Verdana",
-						"default_fontsize" : 10.0,
-						"description" : "",
-						"globalpatchername" : "",
+						"digest" : "",
 						"fontface" : 0,
 						"fontsize" : 10.0,
-						"default_fontface" : 0,
+						"default_fontname" : "Verdana",
+						"default_fontsize" : 10.0,
+						"description" : "",
 						"tags" : "",
-						"digest" : "",
-						"default_fontname" : "Verdana"
+						"fontname" : "Verdana",
+						"default_fontface" : 0,
+						"globalpatchername" : ""
 					}
 ,
 					"text" : "p issues"
@@ -3614,16 +3616,16 @@
 ,
 					"patching_rect" : [ 103.5, 617.0, 160.0, 19.0 ],
 					"saved_object_attributes" : 					{
-						"fontname" : "Verdana",
-						"default_fontsize" : 10.0,
-						"description" : "",
-						"globalpatchername" : "",
+						"digest" : "",
 						"fontface" : 0,
 						"fontsize" : 10.0,
-						"default_fontface" : 0,
+						"default_fontname" : "Verdana",
+						"default_fontsize" : 10.0,
+						"description" : "",
 						"tags" : "",
-						"digest" : "",
-						"default_fontname" : "Verdana"
+						"fontname" : "Verdana",
+						"default_fontface" : 0,
+						"globalpatchername" : ""
 					}
 ,
 					"text" : "p annotation"
@@ -3648,7 +3650,9 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"annotation" : "",
+					"comment" : "fail message, or other annotation",
+					"hint" : "",
 					"id" : "obj-22",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
@@ -3841,7 +3845,8 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"annotation" : "",
+					"comment" : "Max message returning from the patch under test",
 					"id" : "obj-3",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
