@@ -56,6 +56,7 @@ int main(void)
 //{
 	t_class *c;
 	
+	common_symbols_init();
 	c = class_new("jcom.test.sample~",
 				  (method)testsample_new,
 				  (method)testsample_free,
@@ -135,7 +136,7 @@ void testsample_tick(t_testsample *x)
 			atom_setfloat(a+i, x->samples[i]);
 		post("%ld %f", i, x->samples[i]);		
 		}
-		//outlet_anything(x->outlet, _sym_list, x->attr_samplecount, a); //this call is crashing
+		outlet_anything(x->outlet, _sym_list, x->attr_samplecount, a);
 	}
 }
 
