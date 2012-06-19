@@ -132,10 +132,8 @@ void testsample_tick(t_testsample *x)
 	else {
 		t_atom	a[x->attr_samplecount];		
 		
-		for (int i=0; i < x->attr_samplecount; i++){
+		for (int i=0; i < x->attr_samplecount; i++)
 			atom_setfloat(a+i, x->samples[i]);
-		post("%ld %f", i, x->samples[i]);		
-		}
 		outlet_anything(x->outlet, _sym_list, x->attr_samplecount, a);
 	}
 }
