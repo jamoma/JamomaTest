@@ -133,10 +133,9 @@ void testsample_tick(t_testsample *x)
 		
 		for (int i=0; i < x->attr_samplecount; i++){
 			atom_setfloat(a+i, x->samples[i]);
-		post("%ld %f", i, x->samples[i]);
-		post("%ld %f", i, &a[i]);
+		post("%ld %f", i, x->samples[i]);		
 		}
-		//outlet_anything(x->outlet, _sym_list, x->attr_samplecount, a);
+		//outlet_anything(x->outlet, _sym_list, x->attr_samplecount, a); //this call is crashing
 	}
 }
 
@@ -176,10 +175,10 @@ t_int *testsample_perform(t_int *w)
 	t_float *ins = (float *)(w[2]);
 	int n = (long)w[3];		
 	
-	if (!x->attr_armed) {
+	if (x->attr_armed) {
 		memcpy(x->samples, ins+x->attr_offset, sizeof(float) * x->attr_samplecount);		
 		clock_delay(x->clock, 0);
-		x->attr_armed = true;
+		x->attr_armed = false;
 	}
 	
 	return w + 4;
