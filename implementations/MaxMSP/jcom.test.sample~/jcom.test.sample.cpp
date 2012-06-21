@@ -20,18 +20,15 @@
 
 
 typedef struct _testsample {
-	t_pxobject	ob;						///< header
-	//t_object	*patcher;					///< the patcher in which the object exists -- assumed to be a top-level patcher
-	//t_test		*test;					///< test object that is calling this assertion
+	t_pxobject	ob;							///< header
 	void		*outlet;					///< float/list for sampled values
-	void*		clock;
-	//t_clock		*t_clock;					///< clock for pushing the data onto the scheduler from the audio thread
-	long		attr_offset;					///< attr: offset into the vector at which to grab the sample
-	long		attr_samplecount;				///< attr: number of samples to grab
+	void*		clock;						///< clock for pushing the data onto the scheduler from the audio thread
+	long		attr_offset;				///< attr: offset into the vector at which to grab the sample
+	long		attr_samplecount;			///< attr: number of samples to grab
 	double		samples[MAXSAMPLECOUNT];	///< samples to return
 	long		attr_armed;					///< have we run our perform method and returned output yet?
-	long		attr_deferblocks;
-	long		countdown;
+	long		attr_deferblocks;			///< how many samples blocks are passing by before grabbing a sample
+	long		countdown;					///< the counter of how many samples blocks are passing by before grabbing a sample
 } t_testsample;
 
 
@@ -110,7 +107,6 @@ void* testsample_new(t_symbol *s, long argc, t_atom *argv)
 
 void testsample_free(t_testsample *x)
 {
-	//clock_free(x->t_clock);
 	dsp_free((t_pxobject*)x); 
 	object_free(x->clock);
 }
@@ -175,7 +171,9 @@ t_int *testsample_perform(t_int *w)
 	int n = (long)w[3];		
 	
 	if (x->attr_armed) {
-		memcpy(x->samples, ins+x->attr_offset, sizeof(float) * x->attr_samplecount);		
+		for (int i=0; i<x->attr_samplecount; i++)
+			x->samples[i] = *(ins+(x->attr_offset+i)); //memcpy doesn't work because we need to case the 32-bit MSP signal to our 64-bit sample buffer
+		
 		clock_delay(x->clock, 0);
 		x->attr_armed = false;
 	}

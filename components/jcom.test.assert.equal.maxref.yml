@@ -63,6 +63,7 @@ attributes:
    default: true
 
 seealso:
+ - jcom.test.sample~
  - jmod.test.finish
  - jmod.test.start
 
