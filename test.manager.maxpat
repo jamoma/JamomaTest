@@ -43,7 +43,7 @@
 							"revision" : 5
 						}
 ,
-						"rect" : [ 433.0, 58.0, 883.0, 736.0 ],
+						"rect" : [ 397.0, 58.0, 883.0, 736.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -81,8 +81,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 163.0, 582.0, 25.0, 25.0 ],
-									"presentation_rect" : [ 78.0, 577.0, 0.0, 0.0 ]
+									"patching_rect" : [ 163.0, 582.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -502,16 +501,16 @@
 ,
 									"patching_rect" : [ 508.0, 256.0, 68.0, 19.0 ],
 									"saved_object_attributes" : 									{
-										"default_fontsize" : 12.0,
-										"globalpatchername" : "",
-										"description" : "",
-										"fontface" : 0,
-										"fontsize" : 12.0,
+										"fontname" : "Arial",
 										"default_fontface" : 0,
 										"digest" : "",
-										"fontname" : "Arial",
+										"tags" : "",
 										"default_fontname" : "Arial",
-										"tags" : ""
+										"globalpatchername" : "",
+										"fontface" : 0,
+										"default_fontsize" : 12.0,
+										"fontsize" : 12.0,
+										"description" : ""
 									}
 ,
 									"text" : "p open-test"
@@ -775,16 +774,16 @@
 ,
 									"patching_rect" : [ 581.5, 256.0, 164.0, 19.0 ],
 									"saved_object_attributes" : 									{
-										"default_fontsize" : 10.0,
-										"globalpatchername" : "",
-										"description" : "",
-										"fontface" : 0,
-										"fontsize" : 10.0,
+										"fontname" : "Verdana",
 										"default_fontface" : 0,
 										"digest" : "",
-										"fontname" : "Verdana",
+										"tags" : "",
 										"default_fontname" : "Verdana",
-										"tags" : ""
+										"globalpatchername" : "",
+										"fontface" : 0,
+										"default_fontsize" : 10.0,
+										"fontsize" : 10.0,
+										"description" : ""
 									}
 ,
 									"text" : "p add-components-searchpath"
@@ -958,16 +957,16 @@
 ,
 									"patching_rect" : [ 342.0, 436.0, 66.0, 19.0 ],
 									"saved_object_attributes" : 									{
-										"default_fontsize" : 10.0,
-										"globalpatchername" : "",
-										"description" : "",
-										"fontface" : 0,
-										"fontsize" : 10.0,
+										"fontname" : "Verdana",
 										"default_fontface" : 0,
 										"digest" : "",
-										"fontname" : "Verdana",
+										"tags" : "",
 										"default_fontname" : "Verdana",
-										"tags" : ""
+										"globalpatchername" : "",
+										"fontface" : 0,
+										"default_fontsize" : 10.0,
+										"fontsize" : 10.0,
+										"description" : ""
 									}
 ,
 									"text" : "p deferring"
@@ -1112,8 +1111,8 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 342.0, 413.0, 80.0, 19.0 ],
-									"text" : "r TestFinished"
+									"patching_rect" : [ 342.0, 388.0, 126.0, 19.0 ],
+									"text" : "r jamoma-test-finished"
 								}
 
 							}
@@ -1236,16 +1235,16 @@
 ,
 									"patching_rect" : [ 308.0, 503.0, 41.0, 19.0 ],
 									"saved_object_attributes" : 									{
-										"default_fontsize" : 10.0,
-										"globalpatchername" : "",
-										"description" : "",
-										"fontface" : 0,
-										"fontsize" : 10.0,
+										"fontname" : "Verdana",
 										"default_fontface" : 0,
 										"digest" : "",
-										"fontname" : "Verdana",
+										"tags" : "",
 										"default_fontname" : "Verdana",
-										"tags" : ""
+										"globalpatchername" : "",
+										"fontface" : 0,
+										"default_fontsize" : 10.0,
+										"fontsize" : 10.0,
+										"description" : ""
 									}
 ,
 									"text" : "p thru"
@@ -1617,16 +1616,16 @@
 ,
 					"patching_rect" : [ 46.0, 170.0, 164.0, 19.0 ],
 					"saved_object_attributes" : 					{
-						"default_fontsize" : 12.0,
-						"globalpatchername" : "",
-						"description" : "",
-						"fontface" : 0,
-						"fontsize" : 12.0,
+						"fontname" : "Arial",
 						"default_fontface" : 0,
 						"digest" : "",
-						"fontname" : "Arial",
+						"tags" : "",
 						"default_fontname" : "Arial",
-						"tags" : ""
+						"globalpatchername" : "",
+						"fontface" : 0,
+						"default_fontsize" : 12.0,
+						"fontsize" : 12.0,
+						"description" : ""
 					}
 ,
 					"text" : "p testProcessing"
@@ -1885,16 +1884,16 @@
 ,
 					"patching_rect" : [ 46.0, 316.0, 183.0, 19.0 ],
 					"saved_object_attributes" : 					{
-						"default_fontsize" : 12.0,
-						"globalpatchername" : "",
-						"description" : "",
-						"fontface" : 0,
-						"fontsize" : 12.0,
+						"fontname" : "Arial",
 						"default_fontface" : 0,
 						"digest" : "",
-						"fontname" : "Arial",
+						"tags" : "",
 						"default_fontname" : "Arial",
-						"tags" : ""
+						"globalpatchername" : "",
+						"fontface" : 0,
+						"default_fontsize" : 12.0,
+						"fontsize" : 12.0,
+						"description" : ""
 					}
 ,
 					"text" : "p how-many-asserts-do-we-have?"
@@ -2328,16 +2327,16 @@
 ,
 									"patching_rect" : [ 245.0, 270.0, 109.0, 20.0 ],
 									"saved_object_attributes" : 									{
-										"default_fontsize" : 12.0,
-										"globalpatchername" : "",
-										"description" : "",
-										"fontface" : 0,
-										"fontsize" : 12.0,
+										"fontname" : "Arial",
 										"default_fontface" : 0,
 										"digest" : "",
-										"fontname" : "Arial",
+										"tags" : "",
 										"default_fontname" : "Arial",
-										"tags" : ""
+										"globalpatchername" : "",
+										"fontface" : 0,
+										"default_fontsize" : 12.0,
+										"fontsize" : 12.0,
+										"description" : ""
 									}
 ,
 									"text" : "p EndResult"
@@ -2600,16 +2599,16 @@
 ,
 					"patching_rect" : [ 191.0, 197.0, 83.0, 19.0 ],
 					"saved_object_attributes" : 					{
-						"default_fontsize" : 12.0,
-						"globalpatchername" : "",
-						"description" : "",
-						"fontface" : 0,
-						"fontsize" : 12.0,
+						"fontname" : "Arial",
 						"default_fontface" : 0,
 						"digest" : "",
-						"fontname" : "Arial",
+						"tags" : "",
 						"default_fontname" : "Arial",
-						"tags" : ""
+						"globalpatchername" : "",
+						"fontface" : 0,
+						"default_fontsize" : 12.0,
+						"fontsize" : 12.0,
+						"description" : ""
 					}
 ,
 					"text" : "p print-to-Max"
