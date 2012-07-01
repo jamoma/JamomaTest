@@ -15,9 +15,6 @@ inlets:
   - id: 1
     type: bang
     desc: local trigger for starting test
-  - id: 2
-    type: string
-    desc: alternative fail message, or other annotation	
 
 outlets:
  - id: 0
