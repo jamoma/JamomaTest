@@ -4,10 +4,10 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 0,
-			"revision" : 5
+			"revision" : 7
 		}
 ,
-		"rect" : [ 201.0, 58.0, 1136.0, 385.0 ],
+		"rect" : [ 291.0, 139.0, 833.0, 387.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -30,14 +30,70 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"frgb" : [ 1.0, 0.0, 0.0, 1.0 ],
-					"id" : "obj-4",
-					"maxclass" : "comment",
-					"numinlets" : 1,
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
 					"numoutlets" : 0,
-					"patching_rect" : [ 435.5, 66.0, 236.0, 20.0 ],
-					"text" : "Two of the bang tests never gets executed",
-					"textcolor" : [ 1.0, 0.0, 0.0, 1.0 ]
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 6,
+							"minor" : 0,
+							"revision" : 7
+						}
+,
+						"rect" : [ 25.0, 69.0, 640.0, 480.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 0,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 0,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"boxanimatetime" : 200,
+						"imprint" : 0,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"boxes" : [ 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-18",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 92.0, 84.0, 442.0, 20.0 ],
+									"text" : "jcom.test.assert.equal TimeOutTest::This_test_should_fail @input 1 @issue 1000"
+								}
+
+							}
+ ],
+						"lines" : [  ]
+					}
+,
+					"patching_rect" : [ 352.5, 267.0, 83.0, 20.0 ],
+					"saved_object_attributes" : 					{
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"default_fontsize" : 12.0,
+						"description" : "",
+						"digest" : "",
+						"fontface" : 0,
+						"fontname" : "Arial",
+						"fontsize" : 12.0,
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p timeout-test"
 				}
 
 			}
@@ -123,7 +179,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 0,
-							"revision" : 5
+							"revision" : 7
 						}
 ,
 						"rect" : [ 25.0, 69.0, 1174.0, 670.0 ],
@@ -149,12 +205,69 @@
 								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
+									"id" : "obj-13",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 555.5, 296.5, 61.0, 20.0 ],
+									"text" : "jcom.thru"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-14",
+									"linecount" : 2,
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 555.5, 260.5, 545.0, 33.0 ],
+									"text" : "jcom.test.assert.equal floatNonequalWithTolerance @input 23.1 @compareTo 23.2 @tolerance 0.01 @expectedResult false"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-11",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 13.5, 286.5, 61.0, 20.0 ],
+									"text" : "jcom.thru"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-12",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 13.5, 260.5, 515.0, 20.0 ],
+									"text" : "jcom.test.assert.equal floatEqualWithTolerance @input 23.1 @compareTo 23.2 @tolerance 0.2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
 									"id" : "obj-9",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 118.5, 208.5, 61.0, 20.0 ],
+									"patching_rect" : [ 13.5, 208.5, 61.0, 20.0 ],
 									"text" : "jcom.thru"
 								}
 
@@ -166,9 +279,9 @@
 									"id" : "obj-10",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 118.5, 182.5, 410.0, 20.0 ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 13.5, 182.5, 410.0, 20.0 ],
 									"text" : "jcom.test.assert.equal floatEqual @input 23.1 @compareTo 23.1"
 								}
 
@@ -182,7 +295,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 118.5, 547.5, 61.0, 20.0 ],
+									"patching_rect" : [ 13.5, 622.5, 61.0, 20.0 ],
 									"text" : "jcom.thru"
 								}
 
@@ -194,9 +307,9 @@
 									"id" : "obj-8",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 118.5, 521.5, 483.0, 20.0 ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 13.5, 596.5, 483.0, 20.0 ],
 									"text" : "jcom.test.assert.equal floatAndInt2 @input -15. @compareTo -15 @expectedResult false"
 								}
 
@@ -210,7 +323,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 118.5, 469.5, 61.0, 20.0 ],
+									"patching_rect" : [ 13.5, 544.5, 61.0, 20.0 ],
 									"text" : "jcom.thru"
 								}
 
@@ -222,9 +335,9 @@
 									"id" : "obj-6",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 118.5, 443.5, 483.0, 20.0 ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 13.5, 518.5, 483.0, 20.0 ],
 									"text" : "jcom.test.assert.equal floatAndInt1 @input -15 @compareTo -15. @expectedResult false"
 								}
 
@@ -238,7 +351,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 118.5, 392.5, 61.0, 20.0 ],
+									"patching_rect" : [ 13.5, 467.5, 61.0, 20.0 ],
 									"text" : "jcom.thru"
 								}
 
@@ -250,9 +363,9 @@
 									"id" : "obj-4",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 118.5, 366.5, 536.0, 20.0 ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 13.5, 441.5, 536.0, 20.0 ],
 									"text" : "jcom.test.assert.equal floatDifferentSigns2 @input -23.1 @compareTo 23.1 @expectedResult false"
 								}
 
@@ -266,7 +379,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 118.5, 317.5, 61.0, 20.0 ],
+									"patching_rect" : [ 13.5, 392.5, 61.0, 20.0 ],
 									"text" : "jcom.thru"
 								}
 
@@ -278,9 +391,9 @@
 									"id" : "obj-2",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 118.5, 291.5, 536.0, 20.0 ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 13.5, 366.5, 536.0, 20.0 ],
 									"text" : "jcom.test.assert.equal floatDifferentSigns1 @input 23.1 @compareTo -23.1 @expectedResult false"
 								}
 
@@ -294,7 +407,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 118.5, 134.5, 61.0, 20.0 ],
+									"patching_rect" : [ 13.5, 134.5, 61.0, 20.0 ],
 									"text" : "jcom.thru"
 								}
 
@@ -306,9 +419,9 @@
 									"id" : "obj-35",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 118.5, 108.5, 354.0, 20.0 ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 13.5, 108.5, 354.0, 20.0 ],
 									"text" : "jcom.test.assert.equal floatEqual @input 23.1 @compareTo 23.1"
 								}
 
@@ -322,7 +435,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 118.5, 61.5, 61.0, 20.0 ],
+									"patching_rect" : [ 13.5, 61.5, 61.0, 20.0 ],
 									"text" : "jcom.thru"
 								}
 
@@ -334,9 +447,9 @@
 									"id" : "obj-32",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 118.5, 35.5, 500.0, 20.0 ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 13.5, 35.5, 500.0, 20.0 ],
 									"text" : "jcom.test.assert.equal floatNotEqual @input 23.1 @compareTo 23.3 @expectedResult false"
 								}
 
@@ -347,7 +460,7 @@
 									"destination" : [ "obj-2", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 128.0, 346.5, 112.0, 346.5, 112.0, 281.5, 128.0, 281.5 ],
+									"midpoints" : [ 23.0, 421.5, 7.0, 421.5, 7.0, 356.5, 23.0, 356.5 ],
 									"source" : [ "obj-1", 0 ]
 								}
 
@@ -358,6 +471,44 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-10", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-12", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 23.0, 315.5, 7.0, 315.5, 7.0, 250.5, 23.0, 250.5 ],
+									"source" : [ "obj-11", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-11", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-12", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-14", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 565.0, 322.5, 549.0, 322.5, 549.0, 257.5, 565.0, 257.5 ],
+									"source" : [ "obj-13", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-13", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-14", 0 ]
 								}
 
 							}
@@ -375,7 +526,7 @@
 									"destination" : [ "obj-4", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 128.0, 421.5, 112.0, 421.5, 112.0, 356.5, 128.0, 356.5 ],
+									"midpoints" : [ 23.0, 496.5, 7.0, 496.5, 7.0, 431.5, 23.0, 431.5 ],
 									"source" : [ "obj-3", 0 ]
 								}
 
@@ -394,7 +545,7 @@
 									"destination" : [ "obj-32", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 128.0, 90.5, 112.0, 90.5, 112.0, 25.5, 128.0, 25.5 ],
+									"midpoints" : [ 23.0, 90.5, 7.0, 90.5, 7.0, 25.5, 23.0, 25.5 ],
 									"source" : [ "obj-33", 0 ]
 								}
 
@@ -404,7 +555,7 @@
 									"destination" : [ "obj-35", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 128.0, 163.5, 112.0, 163.5, 112.0, 98.5, 128.0, 98.5 ],
+									"midpoints" : [ 23.0, 163.5, 7.0, 163.5, 7.0, 98.5, 23.0, 98.5 ],
 									"source" : [ "obj-34", 0 ]
 								}
 
@@ -432,7 +583,7 @@
 									"destination" : [ "obj-6", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 128.0, 498.5, 112.0, 498.5, 112.0, 433.5, 128.0, 433.5 ],
+									"midpoints" : [ 23.0, 573.5, 7.0, 573.5, 7.0, 508.5, 23.0, 508.5 ],
 									"source" : [ "obj-5", 0 ]
 								}
 
@@ -451,7 +602,7 @@
 									"destination" : [ "obj-8", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 128.0, 576.5, 112.0, 576.5, 112.0, 511.5, 128.0, 511.5 ],
+									"midpoints" : [ 23.0, 651.5, 7.0, 651.5, 7.0, 586.5, 23.0, 586.5 ],
 									"source" : [ "obj-7", 0 ]
 								}
 
@@ -470,39 +621,26 @@
 									"destination" : [ "obj-10", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 128.0, 237.5, 112.0, 237.5, 112.0, 172.5, 128.0, 172.5 ],
+									"midpoints" : [ 23.0, 237.5, 7.0, 237.5, 7.0, 172.5, 23.0, 172.5 ],
 									"source" : [ "obj-9", 0 ]
 								}
 
-							}
- ],
-						"dependency_cache" : [ 							{
-								"name" : "jcom.test.assert.equal.maxpat",
-								"bootpath" : "/Users/lossius/dev/Jamoma/Modules/Test/components",
-								"type" : "JSON",
-								"implicit" : 1
-							}
-, 							{
-								"name" : "jcom.thru.maxpat",
-								"bootpath" : "/Users/lossius/dev/Jamoma/Modules/Modular/Max/library/components/thru",
-								"type" : "JSON",
-								"implicit" : 1
 							}
  ]
 					}
 ,
 					"patching_rect" : [ 352.5, 185.625, 71.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"globalpatchername" : "",
-						"fontface" : 0,
-						"fontsize" : 12.0,
 						"default_fontface" : 0,
-						"digest" : "",
 						"default_fontname" : "Arial",
-						"fontname" : "Arial",
-						"tags" : "",
 						"default_fontsize" : 12.0,
-						"description" : ""
+						"description" : "",
+						"digest" : "",
+						"fontface" : 0,
+						"fontname" : "Arial",
+						"fontsize" : 12.0,
+						"globalpatchername" : "",
+						"tags" : ""
 					}
 ,
 					"text" : "p floatTests"
@@ -522,10 +660,10 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 0,
-							"revision" : 5
+							"revision" : 7
 						}
 ,
-						"rect" : [ 561.0, 54.0, 780.0, 553.0 ],
+						"rect" : [ 500.0, 54.0, 780.0, 553.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -565,8 +703,8 @@
 									"id" : "obj-7",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 110.0, 320.0, 509.0, 20.0 ],
 									"text" : "jcom.test.assert.equal intOppositeSigns2 @input -23 @compareTo 23 @expectedResult false"
 								}
@@ -593,8 +731,8 @@
 									"id" : "obj-5",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 110.0, 239.0, 509.0, 20.0 ],
 									"text" : "jcom.test.assert.equal intOppositeSigns1 @input 23 @compareTo -23 @expectedResult false"
 								}
@@ -621,8 +759,8 @@
 									"id" : "obj-3",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 110.0, 151.0, 324.0, 20.0 ],
 									"text" : "jcom.test.assert.equal intEqual @input 23 @compareTo 23"
 								}
@@ -649,8 +787,8 @@
 									"id" : "obj-18",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 110.0, 69.0, 469.0, 20.0 ],
 									"text" : "jcom.test.assert.equal intNotEqual @input 23 @compareTo 24 @expectedResult false"
 								}
@@ -733,34 +871,21 @@
 								}
 
 							}
- ],
-						"dependency_cache" : [ 							{
-								"name" : "jcom.test.assert.equal.maxpat",
-								"bootpath" : "/Users/lossius/dev/Jamoma/Modules/Test/components",
-								"type" : "JSON",
-								"implicit" : 1
-							}
-, 							{
-								"name" : "jcom.thru.maxpat",
-								"bootpath" : "/Users/lossius/dev/Jamoma/Modules/Modular/Max/library/components/thru",
-								"type" : "JSON",
-								"implicit" : 1
-							}
  ]
 					}
 ,
 					"patching_rect" : [ 352.5, 225.5, 61.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"globalpatchername" : "",
-						"fontface" : 0,
-						"fontsize" : 12.0,
 						"default_fontface" : 0,
-						"digest" : "",
 						"default_fontname" : "Arial",
-						"fontname" : "Arial",
-						"tags" : "",
 						"default_fontsize" : 12.0,
-						"description" : ""
+						"description" : "",
+						"digest" : "",
+						"fontface" : 0,
+						"fontname" : "Arial",
+						"fontsize" : 12.0,
+						"globalpatchername" : "",
+						"tags" : ""
 					}
 ,
 					"text" : "p intTests"
@@ -780,10 +905,10 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 0,
-							"revision" : 5
+							"revision" : 7
 						}
 ,
-						"rect" : [ 578.0, 80.0, 765.0, 480.0 ],
+						"rect" : [ 515.0, 80.0, 765.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -806,12 +931,40 @@
 								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
+									"id" : "obj-5",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 59.5, 289.5, 61.0, 20.0 ],
+									"text" : "jcom.thru"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-6",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 59.5, 264.5, 537.0, 20.0 ],
+									"text" : "jcom.test.assert.equal symEqualWithTolerance @input yo! @compareTo yo! @tolerance 0.5"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
 									"id" : "obj-3",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 59.5, 363.5, 61.0, 20.0 ],
+									"patching_rect" : [ 59.5, 453.5, 61.0, 20.0 ],
 									"text" : "jcom.thru"
 								}
 
@@ -823,9 +976,9 @@
 									"id" : "obj-4",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 59.5, 338.5, 610.0, 20.0 ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 59.5, 428.5, 610.0, 20.0 ],
 									"text" : "jcom.test.assert.equal symWithAndWithoutArgument1 @input yo! man! @compareTo yo! @expectedResult false"
 								}
 
@@ -839,7 +992,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 59.5, 282.5, 61.0, 20.0 ],
+									"patching_rect" : [ 59.5, 372.5, 61.0, 20.0 ],
 									"text" : "jcom.thru"
 								}
 
@@ -851,9 +1004,9 @@
 									"id" : "obj-2",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 59.5, 257.5, 610.0, 20.0 ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 59.5, 347.5, 610.0, 20.0 ],
 									"text" : "jcom.test.assert.equal symWithAndWithoutArgument1 @input yo! @compareTo yo! man! @expectedResult false"
 								}
 
@@ -879,8 +1032,8 @@
 									"id" : "obj-24",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 59.5, 187.5, 338.0, 20.0 ],
 									"text" : "jcom.test.assert.equal symEqual @input yo! @compareTo yo!"
 								}
@@ -907,8 +1060,8 @@
 									"id" : "obj-10",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 59.5, 111.5, 495.0, 20.0 ],
 									"text" : "jcom.test.assert.equal symNotEqual @input yo! @compareTo man! @expectedResult false"
 								}
@@ -920,7 +1073,7 @@
 									"destination" : [ "obj-2", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 69.0, 311.5, 53.0, 311.5, 53.0, 247.5, 69.0, 247.5 ],
+									"midpoints" : [ 69.0, 401.5, 53.0, 401.5, 53.0, 337.5, 69.0, 337.5 ],
 									"source" : [ "obj-1", 0 ]
 								}
 
@@ -977,7 +1130,7 @@
 									"destination" : [ "obj-4", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 69.0, 392.5, 53.0, 392.5, 53.0, 328.5, 69.0, 328.5 ],
+									"midpoints" : [ 69.0, 482.5, 53.0, 482.5, 53.0, 418.5, 69.0, 418.5 ],
 									"source" : [ "obj-3", 0 ]
 								}
 
@@ -991,34 +1144,40 @@
 								}
 
 							}
- ],
-						"dependency_cache" : [ 							{
-								"name" : "jcom.test.assert.equal.maxpat",
-								"bootpath" : "/Users/lossius/dev/Jamoma/Modules/Test/components",
-								"type" : "JSON",
-								"implicit" : 1
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-6", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 69.0, 318.5, 53.0, 318.5, 53.0, 254.5, 69.0, 254.5 ],
+									"source" : [ "obj-5", 0 ]
+								}
+
 							}
 , 							{
-								"name" : "jcom.thru.maxpat",
-								"bootpath" : "/Users/lossius/dev/Jamoma/Modules/Modular/Max/library/components/thru",
-								"type" : "JSON",
-								"implicit" : 1
+								"patchline" : 								{
+									"destination" : [ "obj-5", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-6", 0 ]
+								}
+
 							}
  ]
 					}
 ,
 					"patching_rect" : [ 352.5, 145.75, 87.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"globalpatchername" : "",
-						"fontface" : 0,
-						"fontsize" : 12.0,
 						"default_fontface" : 0,
-						"digest" : "",
 						"default_fontname" : "Arial",
-						"fontname" : "Arial",
-						"tags" : "",
 						"default_fontsize" : 12.0,
-						"description" : ""
+						"description" : "",
+						"digest" : "",
+						"fontface" : 0,
+						"fontname" : "Arial",
+						"fontsize" : 12.0,
+						"globalpatchername" : "",
+						"tags" : ""
 					}
 ,
 					"text" : "p symbolTests"
@@ -1038,10 +1197,10 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 0,
-							"revision" : 5
+							"revision" : 7
 						}
 ,
-						"rect" : [ 0.0, 44.0, 1440.0, 806.0 ],
+						"rect" : [ -160.0, 44.0, 1440.0, 806.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1064,6 +1223,120 @@
 								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
+									"id" : "obj-41",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 674.5, 599.5, 61.0, 20.0 ],
+									"text" : "jcom.thru"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-42",
+									"linecount" : 2,
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 674.5, 565.5, 517.0, 33.0 ],
+									"text" : "jcom.test.assert.equal listWithIntsAndTolerance2 @input 43 3 @compareTo 41 5 @tolerance 1 @expectedResult false"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-43",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 674.5, 526.5, 61.0, 20.0 ],
+									"text" : "jcom.thru"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-44",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 674.5, 498.5, 507.0, 20.0 ],
+									"text" : "jcom.test.assert.equal listWithIntsAndTolerance @input 43 3 @compareTo 42 4 @tolerance 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-35",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 61.5, 599.5, 61.0, 20.0 ],
+									"text" : "jcom.thru"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-36",
+									"linecount" : 2,
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 61.5, 565.5, 587.0, 33.0 ],
+									"text" : "jcom.test.assert.equal listWithFloatsAndTolerance2 @input 43.1 3.19 @compareTo 43. 3.2 @tolerance 0.01 @expectedResult false"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-27",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 61.5, 526.5, 61.0, 20.0 ],
+									"text" : "jcom.thru"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-28",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 61.5, 498.5, 570.0, 20.0 ],
+									"text" : "jcom.test.assert.equal listWithFloatsAndTolerance @input 43.1 3.19 @compareTo 43. 3.2 @tolerance 0.1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
 									"id" : "obj-23",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
@@ -1082,9 +1355,9 @@
 									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 61.5, 417.5, 583.0, 34.0 ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 61.5, 417.5, 583.0, 33.0 ],
 									"text" : "jcom.test.assert.equal listThatStartsWithANumberDifferingLength2 @input 43 a b @compareTo 43 a b 3.14 @expectedResult false"
 								}
 
@@ -1111,9 +1384,9 @@
 									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 61.5, 339.5, 583.0, 34.0 ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 61.5, 339.5, 583.0, 33.0 ],
 									"text" : "jcom.test.assert.equal listThatStartsWithANumberDifferingLength1 @input 43 a b 3.14 @compareTo 43 a b @expectedResult false"
 								}
 
@@ -1140,9 +1413,9 @@
 									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 61.5, 190.5, 582.0, 34.0 ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 61.5, 190.5, 582.0, 33.0 ],
 									"text" : "jcom.test.assert.equal listThatStartsWithASymDifferingLength2 @input goof 87 hug me twice @compareTo goof 87 hug me @expectedResult false"
 								}
 
@@ -1169,9 +1442,9 @@
 									"linecount" : 2,
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 61.5, 109.5, 595.0, 34.0 ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 61.5, 109.5, 595.0, 33.0 ],
 									"text" : "jcom.test.assert.equal listThatStartsWithASymDifferingLength1 @input goof 87 hug me @compareTo goof 87 hug me twice @expectedResult false"
 								}
 
@@ -1197,8 +1470,8 @@
 									"id" : "obj-16",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 682.5, 398.5, 554.0, 20.0 ],
 									"text" : "jcom.test.assert.equal listAndSym1 @input goof @compareTo goof 87 hug me @expectedResult false"
 								}
@@ -1225,8 +1498,8 @@
 									"id" : "obj-14",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 682.5, 332.5, 554.0, 20.0 ],
 									"text" : "jcom.test.assert.equal listAndSym1 @input goof 87 hug me @compareTo goof @expectedResult false"
 								}
@@ -1253,8 +1526,8 @@
 									"id" : "obj-10",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 682.5, 252.5, 510.0, 20.0 ],
 									"text" : "jcom.test.assert.equal listAndInt2 @input 43 @compareTo 43 a b 3.14 @expectedResult false"
 								}
@@ -1281,8 +1554,8 @@
 									"id" : "obj-12",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 682.5, 181.5, 510.0, 20.0 ],
 									"text" : "jcom.test.assert.equal listAndInt1 @input 43 a b 3.14 @compareTo 43 @expectedResult false"
 								}
@@ -1309,8 +1582,8 @@
 									"id" : "obj-4",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 682.5, 114.5, 530.0, 20.0 ],
 									"text" : "jcom.test.assert.equal listAndFloat2 @input 43. @compareTo 43. a b 3.14 @expectedResult false"
 								}
@@ -1337,8 +1610,8 @@
 									"id" : "obj-2",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 682.5, 43.5, 530.0, 20.0 ],
 									"text" : "jcom.test.assert.equal listAndFloat1 @input 43. a b 3.14 @compareTo 43. @expectedResult false"
 								}
@@ -1379,8 +1652,8 @@
 									"id" : "obj-6",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 61.5, 43.5, 547.0, 20.0 ],
 									"text" : "jcom.test.assert.equal listThatStartsWithASym @input goof 87 hug me @compareTo goof 87 hug me"
 								}
@@ -1393,8 +1666,8 @@
 									"id" : "obj-8",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 61.5, 271.5, 519.0, 20.0 ],
 									"text" : "jcom.test.assert.equal listThatStartsWithANumber @input 43 a b 3.14 @compareTo 43 a b 3.14"
 								}
@@ -1564,6 +1837,25 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-28", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 71.0, 552.5, 53.5, 552.5, 53.5, 494.5, 71.0, 494.5 ],
+									"source" : [ "obj-27", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-27", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-28", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-4", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -1574,10 +1866,67 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-36", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 71.0, 621.5, 53.5, 621.5, 53.5, 561.5, 71.0, 561.5 ],
+									"source" : [ "obj-35", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-35", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-36", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-3", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-42", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 684.0, 621.5, 666.5, 621.5, 666.5, 561.5, 684.0, 561.5 ],
+									"source" : [ "obj-41", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-41", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-42", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-44", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"midpoints" : [ 684.0, 552.5, 666.5, 552.5, 666.5, 494.5, 684.0, 494.5 ],
+									"source" : [ "obj-43", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-43", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-44", 0 ]
 								}
 
 							}
@@ -1629,34 +1978,21 @@
 								}
 
 							}
- ],
-						"dependency_cache" : [ 							{
-								"name" : "jcom.test.assert.equal.maxpat",
-								"bootpath" : "/Users/lossius/dev/Jamoma/Modules/Test/components",
-								"type" : "JSON",
-								"implicit" : 1
-							}
-, 							{
-								"name" : "jcom.thru.maxpat",
-								"bootpath" : "/Users/lossius/dev/Jamoma/Modules/Modular/Max/library/components/thru",
-								"type" : "JSON",
-								"implicit" : 1
-							}
  ]
 					}
 ,
 					"patching_rect" : [ 352.5, 105.875, 63.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"globalpatchername" : "",
-						"fontface" : 0,
-						"fontsize" : 12.0,
 						"default_fontface" : 0,
-						"digest" : "",
 						"default_fontname" : "Arial",
-						"fontname" : "Arial",
-						"tags" : "",
 						"default_fontsize" : 12.0,
-						"description" : ""
+						"description" : "",
+						"digest" : "",
+						"fontface" : 0,
+						"fontname" : "Arial",
+						"fontsize" : 12.0,
+						"globalpatchername" : "",
+						"tags" : ""
 					}
 ,
 					"text" : "p listTests"
@@ -1676,7 +2012,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 0,
-							"revision" : 5
+							"revision" : 7
 						}
 ,
 						"rect" : [ 25.0, 69.0, 640.0, 480.0 ],
@@ -1719,8 +2055,8 @@
 									"id" : "obj-31",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 61.5, 246.5, 517.0, 20.0 ],
 									"text" : "jcom.test.assert.equal bangNotEqual2 @input huh? @compareTo bang @expectedResult false"
 								}
@@ -1747,8 +2083,8 @@
 									"id" : "obj-29",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 61.5, 174.5, 517.0, 20.0 ],
 									"text" : "jcom.test.assert.equal bangNotEqual1 @input bang @compareTo huh? @expectedResult false"
 								}
@@ -1775,8 +2111,8 @@
 									"id" : "obj-27",
 									"maxclass" : "newobj",
 									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 61.5, 109.5, 365.0, 20.0 ],
 									"text" : "jcom.test.assert.equal bangEqual @input bang @compareTo bang"
 								}
@@ -1840,34 +2176,21 @@
 								}
 
 							}
- ],
-						"dependency_cache" : [ 							{
-								"name" : "jcom.test.assert.equal.maxpat",
-								"bootpath" : "/Users/lossius/dev/Jamoma/Modules/Test/components",
-								"type" : "JSON",
-								"implicit" : 1
-							}
-, 							{
-								"name" : "jcom.thru.maxpat",
-								"bootpath" : "/Users/lossius/dev/Jamoma/Modules/Modular/Max/library/components/thru",
-								"type" : "JSON",
-								"implicit" : 1
-							}
  ]
 					}
 ,
 					"patching_rect" : [ 352.5, 66.0, 75.0, 20.0 ],
 					"saved_object_attributes" : 					{
-						"globalpatchername" : "",
-						"fontface" : 0,
-						"fontsize" : 12.0,
 						"default_fontface" : 0,
-						"digest" : "",
 						"default_fontname" : "Arial",
-						"fontname" : "Arial",
-						"tags" : "",
 						"default_fontsize" : 12.0,
-						"description" : ""
+						"description" : "",
+						"digest" : "",
+						"fontface" : 0,
+						"fontname" : "Arial",
+						"fontsize" : 12.0,
+						"globalpatchername" : "",
+						"tags" : ""
 					}
 ,
 					"text" : "p bangTests"
@@ -2005,21 +2328,21 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "jcom.test.finished.maxpat",
-				"bootpath" : "/Users/lossius/dev/Jamoma/Modules/Test/components",
+				"bootpath" : "/Users/nilspeters/Documents/gits/Jamoma/Modules/Test/components",
 				"patcherrelativepath" : "../components",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jcom.test.assert.equal.maxpat",
-				"bootpath" : "/Users/lossius/dev/Jamoma/Modules/Test/components",
+				"bootpath" : "/Users/nilspeters/Documents/gits/Jamoma/Modules/Test/components",
 				"patcherrelativepath" : "../components",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jcom.thru.maxpat",
-				"bootpath" : "/Users/lossius/dev/Jamoma/Modules/Modular/Max/library/components/thru",
+				"bootpath" : "/Users/nilspeters/Documents/gits/Jamoma/Modules/Modular/Max/library/components/thru",
 				"patcherrelativepath" : "../../Modular/Max/library/components/thru",
 				"type" : "JSON",
 				"implicit" : 1
