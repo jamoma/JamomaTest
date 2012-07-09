@@ -237,7 +237,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-8",
-					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -371,8 +370,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 85.0, 423.0, 191.0, 20.0 ],
-					"text" : "jcom.test.assert.equal.old initial 0."
+					"patching_rect" : [ 85.0, 423.0, 197.0, 20.0 ],
+					"text" : "jcom.test.assert.equal.old initial 0.5"
 				}
 
 			}
