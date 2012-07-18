@@ -276,7 +276,7 @@ end
 ###################################################################
 
 puts "  Copying jcom.test.manager.maxpat to the Max Startup folder"
-`cp "#{@testlib }/jcom.test.manager.maxpat" "#{@maxfolder}/Cycling '74/max-startup"`
+`cp "#{@testlib}/components/test.manager/jcom.test.manager.maxpat" "#{@maxfolder}/Cycling '74/max-startup"`
 
 
 puts "  Launching Max..."
