@@ -107,7 +107,9 @@ end
 
 
 def iteratable_directory_name?(name)
-  name != "." && name != ".." && name != ".svn" && name != ".git"
+#  puts "before #{name}"
+  name != "." && name != ".." && name != ".svn" && name != ".git" && name != "selftests"
+#  puts "after #{name}"
 end
 
 
@@ -181,7 +183,6 @@ def setupOscCallbacks
     puts "    #{msg.args.to_s}"
   end
 end
-
 
 def processAllTestFiles(directory, suffix)
   @testDone = 0  
@@ -276,7 +277,7 @@ end
 ###################################################################
 
 puts "  Copying jcom.test.manager.maxpat to the Max Startup folder"
-`cp "#{@testlib }/jcom.test.manager.maxpat" "#{@maxfolder}/Cycling '74/max-startup"`
+`cp "#{@testlib}/components/test.manager/jcom.test.manager.maxpat" "#{@maxfolder}/Cycling '74/max-startup"`
 
 
 puts "  Launching Max..."
@@ -288,6 +289,22 @@ establishCommunication()
 setupOscCallbacks()
 
 @totaltests = 0
+# first run a Selftest
+@totaltests += processAllTestFiles("#{@testroots}/Modules/Test/selftests", ".test.maxpat")
+
+
+
+@failures = @failures - 1
+if (@failures > 0) #one selftest should fail on purpose
+  puts "Number of fails in sefltest: #{@failures}"  
+  puts "Do you want to continue ? [Y/n]: "  
+  case STDIN.gets.chomp
+    when /\A[nN]o?\Z/ 
+      exit
+    end    
+end
+puts
+
 @testroots.each do |testroot|
   @totaltests += processAllTestFiles(testroot, ".test.maxpat")
 end
