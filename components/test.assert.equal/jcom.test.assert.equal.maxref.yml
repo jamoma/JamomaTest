@@ -6,7 +6,7 @@ tags: [testing, max]
 brief: component for unit tetsing in Max 
 
 desc: >
- use jcom.test.assert.equal to rapidly create unit tests that can test patches and externals  
+ use jcom.test.assert.equal to rapidly create tests to check the functionalities of patches and externals  
 
 inlets:
   - id: 0
@@ -61,7 +61,8 @@ attributes:
 
 seealso:
  - jcom.test.sample~
- - jmod.test.finish
- - jmod.test.start
+ - jcom.test.finish
+ - jcom.test.start
+ - jcom.test.manager
 
 discussion: Jamoma is a free and open source project. http://www.jamoma.org 
