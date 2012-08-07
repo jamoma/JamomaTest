@@ -2,3 +2,4 @@
 *.log
 !components/test.log
 !components/test.log/*
+components/test.log/.DS_Store
