@@ -1,7 +1,7 @@
 /*	
  *	applescript
  *	max object for executing applescripts
- *	by timothy place (from tap.tools)
+ *	by timothy place (from taptools)
  *	tim@electrotap.com
  *	copyright © 2008
  */
