@@ -5,3 +5,4 @@
 components/test.log/.DS_Store
 build
 Makefile
+*.o
