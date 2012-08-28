@@ -126,8 +126,12 @@ void testsample_tick(t_testsample *x)
 	if (x->attr_samplecount == 1)
 		outlet_float(x->outlet, x->samples[0]);
 	else {
+#ifdef WIN_VERSION
+		t_atom	a[MAXSAMPLECOUNT];
+#else
 		t_atom	a[x->attr_samplecount];		
-		
+#endif
+
 		for (int i=0; i < x->attr_samplecount; i++)
 			atom_setfloat(a+i, x->samples[i]);
 		outlet_anything(x->outlet, _sym_list, x->attr_samplecount, a);
