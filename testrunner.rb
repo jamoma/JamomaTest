@@ -8,7 +8,7 @@
 @testlib = Dir.pwd
 
 # First include the functions in the jamoma lib
-@libdir = "../Support"
+@libdir = "../../Core/Shared"
 Dir.chdir @libdir        # change to libdir so that requires work
 @libdir = Dir.pwd
 require "jamomalib"   # C74 build library
