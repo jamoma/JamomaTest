@@ -13,7 +13,7 @@ Dir.chdir @libdir        # change to libdir so that requires work
 @libdir = Dir.pwd
 require "jamomalib"   # C74 build library
 require 'rosc/lib/osc'
-Dir.chdir "#{@libdir}/../Test"
+Dir.chdir "#{@libdir}/../../Modules/Test"
 
 puts "Jamoma Automated Test Runner"
 
