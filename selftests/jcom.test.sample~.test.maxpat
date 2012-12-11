@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 0,
-			"revision" : 7
+			"revision" : 8
 		}
 ,
 		"rect" : [ 55.0, 208.0, 1211.0, 538.0 ],
@@ -98,7 +98,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 0,
-							"revision" : 7
+							"revision" : 8
 						}
 ,
 						"rect" : [ 25.0, 69.0, 640.0, 480.0 ],
@@ -130,7 +130,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 139.5, 216.0, 32.5, 20.0 ],
-									"text" : "+ 1"
+									"text" : "+ 0"
 								}
 
 							}
@@ -169,10 +169,10 @@
 									"id" : "obj-3",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "int", "int", "int" ],
-									"patching_rect" : [ 50.0, 76.0, 46.0, 20.0 ],
-									"text" : "t i i i"
+									"numoutlets" : 2,
+									"outlettype" : [ "int", "int" ],
+									"patching_rect" : [ 63.5, 76.0, 32.5, 20.0 ],
+									"text" : "t i i"
 								}
 
 							}
@@ -240,7 +240,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 50.0, 40.0, 25.0, 25.0 ]
+									"patching_rect" : [ 63.5, 40.0, 25.0, 25.0 ]
 								}
 
 							}
@@ -295,7 +295,7 @@
 									"destination" : [ "obj-2", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"source" : [ "obj-3", 1 ]
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -304,7 +304,7 @@
 									"destination" : [ "obj-28", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"source" : [ "obj-3", 2 ]
+									"source" : [ "obj-3", 1 ]
 								}
 
 							}
@@ -424,10 +424,10 @@
 					"id" : "obj-3",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "bang", "int" ],
-					"patching_rect" : [ 112.0, 31.0, 132.0, 20.0 ],
-					"text" : "t b 1"
+					"numoutlets" : 3,
+					"outlettype" : [ "bang", "bang", "int" ],
+					"patching_rect" : [ 112.0, 31.0, 194.0, 20.0 ],
+					"text" : "t b b 1"
 				}
 
 			}
@@ -572,6 +572,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-8",
+					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -888,6 +889,15 @@
 					"destination" : [ "obj-15", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"source" : [ "obj-3", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
 					"source" : [ "obj-3", 1 ]
 				}
 
@@ -1066,15 +1076,15 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "jcom.test.assert.equal.old.maxpat",
-				"bootpath" : "/Users/nilspeters/Documents/gits/Jamoma/Modules/Test/components",
-				"patcherrelativepath" : "../components",
+				"bootpath" : "/Users/nilspeters/Documents/gits/Jamoma/Modules/Test/components/test.assert.equal.old",
+				"patcherrelativepath" : "../components/test.assert.equal.old",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jcom.test.finished.maxpat",
-				"bootpath" : "/Users/nilspeters/Documents/gits/Jamoma/Modules/Test/components",
-				"patcherrelativepath" : "../components",
+				"bootpath" : "/Users/nilspeters/Documents/gits/Jamoma/Modules/Test/components/test.finished",
+				"patcherrelativepath" : "../components/test.finished",
 				"type" : "JSON",
 				"implicit" : 1
 			}
