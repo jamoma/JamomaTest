@@ -1,17 +1,17 @@
 
 sources:
   - jcom.test.sample.cpp		
-  - ../../Core/Shared/max/c74support/max-includes/common/commonsyms.cpp
+  - ../../../../Core/Shared/max/c74support/max-includes/common/commonsyms.cpp
     
 includes:
   - .
-  - "../../Core/Shared/max/c74support/max-includes"
-  - "../../Core/Shared/max/c74support/msp-includes"
+  - "../../../../Core/Shared/max/c74support/max-includes"
+  - "../../../../Core/Shared/max/c74support/msp-includes"
  
 libraries:
   - C74-MAX
   - C74-MSP  
   
-prefix: ../../Core/Shared/max/c74support/max-includes/macho-prefix.pch
+prefix: ../../../../Core/Shared/max/c74support/max-includes/macho-prefix.pch
 
 arch: "i386"
