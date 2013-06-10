@@ -52,7 +52,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 922.0, 294.0, 173.0, 33.0 ],
-					"text" : "jcom.test.assert.equal.old triggered:count1:offset1 0.2"
+					"text" : "j.test.assert.equal.old triggered:count1:offset1 0.2"
 				}
 
 			}
@@ -81,7 +81,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 922.0, 198.0, 102.0, 60.0 ],
-					"text" : "jcom.test.sample~ @armed 0 @count 1 @offset 1"
+					"text" : "j.test.sample~ @armed 0 @count 1 @offset 1"
 				}
 
 			}
@@ -457,7 +457,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 371.0, 294.0, 140.0, 33.0 ],
-					"text" : "jcom.test.assert.equal.old triggered1:count1 0.1"
+					"text" : "j.test.assert.equal.old triggered1:count1 0.1"
 				}
 
 			}
@@ -471,7 +471,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 371.0, 198.0, 167.0, 20.0 ],
-					"text" : "jcom.test.sample~ @armed 0"
+					"text" : "j.test.sample~ @armed 0"
 				}
 
 			}
@@ -607,7 +607,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 112.0, 158.0, 104.0, 20.0 ],
-					"text" : "jcom.test.finished"
+					"text" : "j.test.finished"
 				}
 
 			}
@@ -637,7 +637,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 594.0, 294.0, 174.0, 33.0 ],
-					"text" : "jcom.test.assert.equal.old triggered:count3 0.1 0.2 0.3"
+					"text" : "j.test.assert.equal.old triggered:count3 0.1 0.2 0.3"
 				}
 
 			}
@@ -679,7 +679,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 85.0, 423.0, 197.0, 20.0 ],
-					"text" : "jcom.test.assert.equal.old initial 0.5"
+					"text" : "j.test.assert.equal.old initial 0.5"
 				}
 
 			}
@@ -694,7 +694,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 594.0, 198.0, 126.0, 33.0 ],
-					"text" : "jcom.test.sample~ @armed 0 @count 3"
+					"text" : "j.test.sample~ @armed 0 @count 3"
 				}
 
 			}
@@ -719,7 +719,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 85.0, 364.0, 108.0, 20.0 ],
-					"text" : "jcom.test.sample~"
+					"text" : "j.test.sample~"
 				}
 
 			}
@@ -1075,21 +1075,21 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "jcom.test.assert.equal.old.maxpat",
+				"name" : "j.test.assert.equal.old.maxpat",
 				"bootpath" : "/Users/nilspeters/Documents/gits/Jamoma/Modules/Test/components/test.assert.equal.old",
 				"patcherrelativepath" : "../components/test.assert.equal.old",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jcom.test.finished.maxpat",
+				"name" : "j.test.finished.maxpat",
 				"bootpath" : "/Users/nilspeters/Documents/gits/Jamoma/Modules/Test/components/test.finished",
 				"patcherrelativepath" : "../components/test.finished",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jcom.test.sample~.mxo",
+				"name" : "j.test.sample~.mxo",
 				"type" : "iLaX"
 			}
  ]

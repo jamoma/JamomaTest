@@ -1,6 +1,6 @@
 
 sources:
-  - jcom.test.sample.cpp		
+  - j.test.sample.cpp		
   - ../../../../Core/Shared/max/c74support/max-includes/common/commonsyms.cpp
     
 includes:

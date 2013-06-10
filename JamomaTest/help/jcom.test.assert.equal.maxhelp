@@ -129,7 +129,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 534.0, 351.0, 452.0, 20.0 ],
-					"text" : "jcom.test.assert.equal tolerancefoo @input -3 @compareTo 0.707 @tolerance 0.01"
+					"text" : "j.test.assert.equal tolerancefoo @input -3 @compareTo 0.707 @tolerance 0.01"
 				}
 
 			}
@@ -306,7 +306,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 397.5, 579.333374, 108.0, 60.0 ],
-					"text" : "jcom.dataspace @dataspace time @input midi @output Hz"
+					"text" : "j.dataspace @dataspace time @input midi @output Hz"
 				}
 
 			}
@@ -321,7 +321,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 534.0, 511.0, 184.0, 47.0 ],
-					"text" : "jcom.test.assert.equal dumpout @input getinput @compareTo input midi"
+					"text" : "j.test.assert.equal dumpout @input getinput @compareTo input midi"
 				}
 
 			}
@@ -336,17 +336,17 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 534.0, 431.0, 184.0, 33.0 ],
-					"text" : "jcom.test.assert.equal midi2Hz @input 69. @compareTo 440."
+					"text" : "j.test.assert.equal midi2Hz @input 69. @compareTo 440."
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "@name", "jcom.test.assert.equal", "@description", "component for unit testing in Max" ],
+					"args" : [ "@name", "j.test.assert.equal", "@description", "component for unit testing in Max" ],
 					"bgmode" : 1,
 					"id" : "obj-2",
 					"maxclass" : "bpatcher",
-					"name" : "jcom.maxhelpui.maxpat",
+					"name" : "j.maxhelpui.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 0.0, 0.0, 1288.0, 70.0 ],
@@ -532,7 +532,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 534.0, 284.0, 461.0, 20.0 ],
-					"text" : "jcom.test.assert.equal reversefoo2 @input 1. @compareTo 2 @expectedResult false"
+					"text" : "j.test.assert.equal reversefoo2 @input 1. @compareTo 2 @expectedResult false"
 				}
 
 			}
@@ -561,7 +561,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 534.0, 255.0, 471.0, 20.0 ],
-					"text" : "jcom.test.assert.equal reversefoo1 @input 1. @compareTo 2.1 @expectedResult false"
+					"text" : "j.test.assert.equal reversefoo1 @input 1. @compareTo 2.1 @expectedResult false"
 				}
 
 			}
@@ -590,7 +590,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 534.0, 225.0, 314.0, 20.0 ],
-					"text" : "jcom.test.assert.equal badfoo2 @input 1. @compareTo 2"
+					"text" : "j.test.assert.equal badfoo2 @input 1. @compareTo 2"
 				}
 
 			}
@@ -619,7 +619,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 534.0, 195.0, 324.0, 20.0 ],
-					"text" : "jcom.test.assert.equal badfoo1 @input 1. @compareTo 2.1"
+					"text" : "j.test.assert.equal badfoo1 @input 1. @compareTo 2.1"
 				}
 
 			}
@@ -647,7 +647,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 534.0, 314.0, 312.0, 20.0 ],
-					"text" : "jcom.test.assert.equal listfoo @input 1 2 @compareTo 3."
+					"text" : "j.test.assert.equal listfoo @input 1 2 @compareTo 3."
 				}
 
 			}
@@ -689,7 +689,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 534.0, 165.0, 290.0, 20.0 ],
-					"text" : "jcom.test.assert.equal foo @input 1. @compareTo 2."
+					"text" : "j.test.assert.equal foo @input 1. @compareTo 2."
 				}
 
 			}
@@ -756,7 +756,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 33.0, 296.0, 101.0, 20.0 ],
-					"text" : "jcom.test.finished"
+					"text" : "j.test.finished"
 				}
 
 			}
@@ -996,68 +996,68 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "jcom.test.finished.maxpat",
+				"name" : "j.test.finished.maxpat",
 				"bootpath" : "/Users/nilspeters/Documents/gits/Jamoma/Modules/Test/components",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jcom.test.assert.equal.maxpat",
+				"name" : "j.test.assert.equal.maxpat",
 				"bootpath" : "/Users/nilspeters/Documents/gits/Jamoma/Modules/Test/components",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jcom.maxhelpui.maxpat",
+				"name" : "j.maxhelpui.maxpat",
 				"bootpath" : "/Users/nilspeters/Documents/gits/Jamoma/Modules/Modular/Max/library/components/maxhelpui",
 				"patcherrelativepath" : "../../Modular/Max/library/components/maxhelpui",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jcom.maxhelpuiButton.png",
+				"name" : "j.maxhelpuiButton.png",
 				"bootpath" : "/Users/nilspeters/Documents/gits/Jamoma/Modules/Modular/Max/library/components/maxhelpui",
 				"patcherrelativepath" : "../../Modular/Max/library/components/maxhelpui",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jcom.maxhelpuiResize.js",
+				"name" : "j.maxhelpuiResize.js",
 				"bootpath" : "/Users/nilspeters/Documents/gits/Jamoma/Modules/Modular/Max/library/components/maxhelpui",
 				"patcherrelativepath" : "../../Modular/Max/library/components/maxhelpui",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jcom.jamomaPath.maxpat",
+				"name" : "j.jamomaPath.maxpat",
 				"bootpath" : "/Users/nilspeters/Documents/gits/Jamoma/Modules/Modular/Max/library/components/jamomaPath",
 				"patcherrelativepath" : "../../Modular/Max/library/components/jamomaPath",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jcom.thru.maxpat",
+				"name" : "j.thru.maxpat",
 				"bootpath" : "/Users/nilspeters/Documents/gits/Jamoma/Modules/Modular/Max/library/components/thru",
 				"patcherrelativepath" : "../../Modular/Max/library/components/thru",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jcom.route.mxo",
+				"name" : "j.route.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "jcom.loader.mxo",
+				"name" : "j.loader.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "jcom.loader.mxo",
+				"name" : "j.loader.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "jcom.dataspace.mxo",
+				"name" : "j.dataspace.mxo",
 				"type" : "iLaX"
 			}
  ]

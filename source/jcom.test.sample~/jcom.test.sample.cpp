@@ -1,5 +1,5 @@
 /* 
- * jcom.test.sample~
+ * j.test.sample~
  * External for the Jamoma Testing Suite
  * By Tim Place and Nils Peters, Copyright © 2012
  * 
@@ -54,7 +54,7 @@ int main(void)
 	t_class *c;
 	
 	common_symbols_init();
-	c = class_new("jcom.test.sample~",
+	c = class_new("j.test.sample~",
 				  (method)testsample_new,
 				  (method)testsample_free,
 				  sizeof(t_testsample),

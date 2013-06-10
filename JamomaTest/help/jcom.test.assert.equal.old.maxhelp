@@ -66,7 +66,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 378.0, 100.0, 126.0, 18.0 ],
-					"text" : "jcom.test.assert.equal"
+					"text" : "j.test.assert.equal"
 				}
 
 			}
@@ -122,7 +122,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 64.0, 639.0, 311.0, 20.0 ],
-					"text" : "jcom.test.assert.equal.old ThisTestFails 3.15 @issue 922"
+					"text" : "j.test.assert.equal.old ThisTestFails 3.15 @issue 922"
 				}
 
 			}
@@ -403,7 +403,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 69.0, 734.0, 361.0, 20.0 ],
-					"text" : "jcom.test.assert.equal.old ThisTestPassesAsWell 3.15 @reverse 1"
+					"text" : "j.test.assert.equal.old ThisTestPassesAsWell 3.15 @reverse 1"
 				}
 
 			}
@@ -498,17 +498,17 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 69.0, 554.0, 244.0, 20.0 ],
-					"text" : "jcom.test.assert.equal.old ThisTestFails 3.15"
+					"text" : "j.test.assert.equal.old ThisTestFails 3.15"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"args" : [ "@name", "jcom.test.assert.equal.old", "@description", "component for unit testing in Max" ],
+					"args" : [ "@name", "j.test.assert.equal.old", "@description", "component for unit testing in Max" ],
 					"bgmode" : 1,
 					"id" : "obj-8",
 					"maxclass" : "bpatcher",
-					"name" : "jcom.maxhelpui.maxpat",
+					"name" : "j.maxhelpui.maxpat",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 0.0, 0.0, 737.0, 70.0 ],
@@ -525,7 +525,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 69.0, 409.0, 260.0, 20.0 ],
-					"text" : "jcom.test.assert.equal.old ThisTestPasses 3.14"
+					"text" : "j.test.assert.equal.old ThisTestPasses 3.14"
 				}
 
 			}
@@ -643,57 +643,57 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "jcom.test.assert.equal.old.maxpat",
+				"name" : "j.test.assert.equal.old.maxpat",
 				"bootpath" : "/Users/lossius/dev/Jamoma/Modules/Test/components",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jcom.maxhelpui.maxpat",
+				"name" : "j.maxhelpui.maxpat",
 				"bootpath" : "/Users/lossius/dev/Jamoma/Modules/Modular/Max/library/components/maxhelpui",
 				"patcherrelativepath" : "../../Modular/Max/library/components/maxhelpui",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jcom.maxhelpuiButton.png",
+				"name" : "j.maxhelpuiButton.png",
 				"bootpath" : "/Users/lossius/dev/Jamoma/Modules/Modular/Max/library/components/maxhelpui",
 				"patcherrelativepath" : "../../Modular/Max/library/components/maxhelpui",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jcom.maxhelpuiResize.js",
+				"name" : "j.maxhelpuiResize.js",
 				"bootpath" : "/Users/lossius/dev/Jamoma/Modules/Modular/Max/library/components/maxhelpui",
 				"patcherrelativepath" : "../../Modular/Max/library/components/maxhelpui",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jcom.jamomaPath.maxpat",
+				"name" : "j.jamomaPath.maxpat",
 				"bootpath" : "/Users/lossius/dev/Jamoma/Modules/Modular/Max/library/components/jamomaPath",
 				"patcherrelativepath" : "../../Modular/Max/library/components/jamomaPath",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jcom.thru.maxpat",
+				"name" : "j.thru.maxpat",
 				"bootpath" : "/Users/lossius/dev/Jamoma/Modules/Modular/Max/library/components/thru",
 				"patcherrelativepath" : "../../Modular/Max/library/components/thru",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jcom.route.mxo",
+				"name" : "j.route.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "jcom.loader.mxo",
+				"name" : "j.loader.mxo",
 				"type" : "iLaX"
 			}
 , 			{
-				"name" : "jcom.loader.mxo",
+				"name" : "j.loader.mxo",
 				"type" : "iLaX"
 			}
  ]

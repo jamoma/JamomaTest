@@ -77,7 +77,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 174.0, 114.0, 100.0, 19.0 ],
-					"text" : "jcom.test.finished"
+					"text" : "j.test.finished"
 				}
 
 			}
@@ -105,7 +105,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "bang", "bang" ],
 					"patching_rect" : [ 284.0, 39.0, 85.0, 19.0 ],
-					"text" : "jcom.test.start"
+					"text" : "j.test.start"
 				}
 
 			}
@@ -132,7 +132,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 524.0, 174.0, 396.0, 19.0 ],
-					"text" : "jcom.test.assert.equal.old list_that_starts_with_a_sym_test goof 87 hug me"
+					"text" : "j.test.assert.equal.old list_that_starts_with_a_sym_test goof 87 hug me"
 				}
 
 			}
@@ -159,7 +159,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 465.0, 204.0, 366.0, 19.0 ],
-					"text" : "jcom.test.assert.equal.old list_that_starts_with_a_number_test 43 a b"
+					"text" : "j.test.assert.equal.old list_that_starts_with_a_number_test 43 a b"
 				}
 
 			}
@@ -186,7 +186,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 419.0, 232.0, 292.0, 19.0 ],
-					"text" : "jcom.test.assert.equal.old sym_test_fail yo! @reverse 1"
+					"text" : "j.test.assert.equal.old sym_test_fail yo! @reverse 1"
 				}
 
 			}
@@ -213,7 +213,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 380.0, 258.0, 210.0, 19.0 ],
-					"text" : "jcom.test.assert.equal.old sym_test yo!"
+					"text" : "j.test.assert.equal.old sym_test yo!"
 				}
 
 			}
@@ -240,7 +240,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 334.0, 284.0, 300.0, 19.0 ],
-					"text" : "jcom.test.assert.equal.old float_test_fail 23.1 @reverse 1"
+					"text" : "j.test.assert.equal.old float_test_fail 23.1 @reverse 1"
 				}
 
 			}
@@ -267,7 +267,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 288.0, 311.0, 218.0, 19.0 ],
-					"text" : "jcom.test.assert.equal.old float_test 23.1"
+					"text" : "j.test.assert.equal.old float_test 23.1"
 				}
 
 			}
@@ -294,7 +294,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 256.0, 338.0, 281.0, 19.0 ],
-					"text" : "jcom.test.assert.equal.old int_test_fail 23 @reverse 1"
+					"text" : "j.test.assert.equal.old int_test_fail 23 @reverse 1"
 				}
 
 			}
@@ -321,7 +321,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 224.0, 364.0, 199.0, 19.0 ],
-					"text" : "jcom.test.assert.equal.old int_test 23"
+					"text" : "j.test.assert.equal.old int_test 23"
 				}
 
 			}
@@ -517,21 +517,21 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "jcom.test.assert.equal.old.maxpat",
+				"name" : "j.test.assert.equal.old.maxpat",
 				"bootpath" : "/Users/lossius/dev/Jamoma/Modules/Test/components",
 				"patcherrelativepath" : "../components",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jcom.test.start.maxpat",
+				"name" : "j.test.start.maxpat",
 				"bootpath" : "/Users/lossius/dev/Jamoma/Modules/Test/components",
 				"patcherrelativepath" : "../components",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jcom.test.finished.maxpat",
+				"name" : "j.test.finished.maxpat",
 				"bootpath" : "/Users/lossius/dev/Jamoma/Modules/Test/components",
 				"patcherrelativepath" : "../components",
 				"type" : "JSON",

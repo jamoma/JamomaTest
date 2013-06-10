@@ -3180,7 +3180,7 @@
 										"tags" : ""
 									}
 ,
-									"text" : "p jcom.compare.tolerance"
+									"text" : "p j.compare.tolerance"
 								}
 
 							}
@@ -4471,7 +4471,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 775.75, 179.0, 113.0, 43.0 ],
-					"text" : "print jcom.test.assert.equal:unknownAttribute"
+					"text" : "print j.test.assert.equal:unknownAttribute"
 				}
 
 			}

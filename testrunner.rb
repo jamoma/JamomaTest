@@ -276,8 +276,8 @@ end
 # here is where we actually run the tests
 ###################################################################
 
-puts "  Copying jcom.test.manager.maxpat to the Max Startup folder"
-`cp "#{@testlib}/components/test.manager/jcom.test.manager.maxpat" "#{@maxfolder}/Cycling '74/max-startup"`
+puts "  Copying j.test.manager.maxpat to the Max Startup folder"
+`cp "#{@testlib}/components/test.manager/j.test.manager.maxpat" "#{@maxfolder}/Cycling '74/max-startup"`
 
 
 puts "  Launching Max..."
@@ -316,8 +316,8 @@ quit = OSC::Message.new('/kill');
 @oscSender.send(quit, 0, @host, @sendPort)
 sleep 5
 
-puts "  Clean up: removing jcom.test.manager.maxpat from the Max Startup folder"
-`rm "#{@maxfolder}/Cycling '74/max-startup/jcom.test.manager.maxpat"`
+puts "  Clean up: removing j.test.manager.maxpat from the Max Startup folder"
+`rm "#{@maxfolder}/Cycling '74/max-startup/j.test.manager.maxpat"`
 
 @sumAssertions = @failures+@passes
 

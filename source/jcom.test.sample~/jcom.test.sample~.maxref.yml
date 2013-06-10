@@ -1,4 +1,4 @@
-title: jcom.test.sample~
+title: j.test.sample~
 author: [Jamoma]
 created_at: 2012/7/7
 tags: [testing, msp]
@@ -6,7 +6,7 @@ tags: [testing, msp]
 brief: MSP component for unit tetsing in Max 
 
 desc: >
- jcom.test.sample~ is similar to C74's snapshot~ but with predictable results in the test context
+ j.test.sample~ is similar to C74's snapshot~ but with predictable results in the test context
 
 inlets:
   - id: 0
@@ -48,9 +48,9 @@ attributes:
 
 seealso:
  - snapshot~
- - jcom.test.assert.equal	
- - jcom.test.finish
- - jcom.test.start
- - jcom.test.manager
+ - j.test.assert.equal	
+ - j.test.finish
+ - j.test.start
+ - j.test.manager
 
 discussion: Jamoma is a free and open source project. http://www.jamoma.org 

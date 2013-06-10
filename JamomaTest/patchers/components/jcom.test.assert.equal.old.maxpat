@@ -640,7 +640,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 515.0, 210.0, 171.0, 19.0 ],
-					"text" : "print jcom.test.assert.equal.old:"
+					"text" : "print j.test.assert.equal.old:"
 				}
 
 			}
@@ -1431,7 +1431,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 557.0, 275.0, 197.0, 19.0 ],
-					"text" : "print jcom.test.assert.equal.old:Error"
+					"text" : "print j.test.assert.equal.old:Error"
 				}
 
 			}

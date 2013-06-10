@@ -1,4 +1,4 @@
-title: jcom.test.assert.equal
+title: j.test.assert.equal
 author: [Jamoma]
 created_at: 2012/4/4
 tags: [testing, max]
@@ -6,7 +6,7 @@ tags: [testing, max]
 brief: component for unit tetsing in Max 
 
 desc: >
- use jcom.test.assert.equal to rapidly create tests to check the functionalities of patches and externals  
+ use j.test.assert.equal to rapidly create tests to check the functionalities of patches and externals  
 
 inlets:
   - id: 0
@@ -60,9 +60,9 @@ attributes:
    default: true
 
 seealso:
- - jcom.test.sample~
- - jcom.test.finish
- - jcom.test.start
- - jcom.test.manager
+ - j.test.sample~
+ - j.test.finish
+ - j.test.start
+ - j.test.manager
 
 discussion: Jamoma is a free and open source project. http://www.jamoma.org 
