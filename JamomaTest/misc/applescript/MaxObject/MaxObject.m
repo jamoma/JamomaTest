@@ -456,7 +456,7 @@ tryMessage:
 }
 
 
-// NOTE: this method is also mirrored in the TTBlue Library
+// NOTE: this method is also mirrored in the Jamoma DSP Library
 - (void) setLong:(long)value forKey:(NSString *)key
 {
 	[self setValue:[NSNumber numberWithLong:value] forKey:key];

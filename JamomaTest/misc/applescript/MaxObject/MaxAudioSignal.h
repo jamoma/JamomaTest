@@ -37,7 +37,7 @@
 /*!
 	@class		TTAudioSignal
 	@abstract	An object containing a set of audio vectors.
-	@discussion This object serves as the primary mechanism for passing audio between TTBlue objects.  
+	@discussion This object serves as the primary mechanism for passing audio between Jamoma objects.  
 				It contains a set of audio vectors, specifically pointers to TTAudioSample values.
 				
 				Because this code is used in audio-contexts, with high-performance demands, all members
