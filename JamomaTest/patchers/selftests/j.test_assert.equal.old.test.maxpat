@@ -3,11 +3,12 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 0,
-			"revision" : 5
+			"minor" : 1,
+			"revision" : 7,
+			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 257.0, 283.0, 783.0, 412.0 ],
+		"rect" : [ 204.0, 188.0, 978.0, 420.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 9.873845,
@@ -29,53 +30,11 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontname" : "Verdana",
-					"fontsize" : 9.873845,
-					"id" : "obj-22",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 101.0, 117.5, 67.0, 18.0 ],
-					"text" : "loadmess 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-21",
-					"maxclass" : "gswitch2",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 154.0, 154.0, 39.0, 32.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Verdana",
-					"fontsize" : 10.0,
-					"id" : "obj-1",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 174.0, 199.5, 67.0, 19.0 ],
-					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
-					"text" : "thispatcher"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Verdana",
 					"fontsize" : 10.0,
 					"id" : "obj-2",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"numoutlets" : 0,
 					"patching_rect" : [ 174.0, 114.0, 100.0, 19.0 ],
 					"text" : "j.test.finished"
 				}
@@ -102,8 +61,8 @@
 					"id" : "obj-4",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "bang", "bang" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 284.0, 39.0, 85.0, 19.0 ],
 					"text" : "j.test.start"
 				}
@@ -130,7 +89,8 @@
 					"id" : "obj-6",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 524.0, 174.0, 396.0, 19.0 ],
 					"text" : "j.test.assert.equal.old list_that_starts_with_a_sym_test goof 87 hug me"
 				}
@@ -157,7 +117,8 @@
 					"id" : "obj-8",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 465.0, 204.0, 366.0, 19.0 ],
 					"text" : "j.test.assert.equal.old list_that_starts_with_a_number_test 43 a b"
 				}
@@ -184,7 +145,8 @@
 					"id" : "obj-10",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 419.0, 232.0, 292.0, 19.0 ],
 					"text" : "j.test.assert.equal.old sym_test_fail yo! @reverse 1"
 				}
@@ -211,7 +173,8 @@
 					"id" : "obj-12",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 380.0, 258.0, 210.0, 19.0 ],
 					"text" : "j.test.assert.equal.old sym_test yo!"
 				}
@@ -238,7 +201,8 @@
 					"id" : "obj-14",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 334.0, 284.0, 300.0, 19.0 ],
 					"text" : "j.test.assert.equal.old float_test_fail 23.1 @reverse 1"
 				}
@@ -265,7 +229,8 @@
 					"id" : "obj-16",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 288.0, 311.0, 218.0, 19.0 ],
 					"text" : "j.test.assert.equal.old float_test 23.1"
 				}
@@ -292,7 +257,8 @@
 					"id" : "obj-18",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 256.0, 338.0, 281.0, 19.0 ],
 					"text" : "j.test.assert.equal.old int_test_fail 23 @reverse 1"
 				}
@@ -319,7 +285,8 @@
 					"id" : "obj-20",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 224.0, 364.0, 199.0, 19.0 ],
 					"text" : "j.test.assert.equal.old int_test 23"
 				}
@@ -368,33 +335,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-19", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-21", 1 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-21", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-21", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-22", 0 ]
 				}
 
 			}
@@ -518,24 +458,50 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "j.test.assert.equal.old.maxpat",
-				"bootpath" : "/Users/lossius/dev/Jamoma/Modules/Test/components",
+				"bootpath" : "/Users/lossius/dev/Jamoma/Implementations/MaxTest/JamomaTest/patchers/components",
 				"patcherrelativepath" : "../components",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "test.string.equals.maxpat",
+				"bootpath" : "/Applications/Max 6.1/packages/testpackage02/misc",
+				"patcherrelativepath" : "../../../../../../../../../Applications/Max 6.1/packages/testpackage02/misc",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "test.string.equals.js",
+				"bootpath" : "/Applications/Max 6.1/packages/testpackage02/misc",
+				"patcherrelativepath" : "../../../../../../../../../Applications/Max 6.1/packages/testpackage02/misc",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "j.test.start.maxpat",
-				"bootpath" : "/Users/lossius/dev/Jamoma/Modules/Test/components",
+				"bootpath" : "/Users/lossius/dev/Jamoma/Implementations/MaxTest/JamomaTest/patchers/components",
 				"patcherrelativepath" : "../components",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "j.test.finished.maxpat",
-				"bootpath" : "/Users/lossius/dev/Jamoma/Modules/Test/components",
+				"bootpath" : "/Users/lossius/dev/Jamoma/Implementations/MaxTest/JamomaTest/patchers/components",
 				"patcherrelativepath" : "../components",
 				"type" : "JSON",
 				"implicit" : 1
+			}
+, 			{
+				"name" : "oscar.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "oscar.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "oscar.mxo",
+				"type" : "iLaX"
 			}
  ]
 	}
